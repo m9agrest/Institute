@@ -1,0 +1,21 @@
+C:\Users\student\Desktop\lab_1_2\bin\Debug\lab_1_2.exe.config
+C:\Users\student\Desktop\lab_1_2\bin\Debug\lab_1_2.exe
+C:\Users\student\Desktop\lab_1_2\bin\Debug\lab_1_2.pdb
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.Form1.resources
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.Properties.Resources.resources
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.csproj.GenerateResource.cache
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.exe
+C:\Users\student\Desktop\lab_1_2\obj\Debug\lab_1_2.pdb
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\bin\Debug\lab_1_2.exe.config
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\bin\Debug\lab_1_2.exe
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\bin\Debug\lab_1_2.pdb
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.csproj.AssemblyReference.cache
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.csproj.SuggestedBindingRedirects.cache
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.Form1.resources
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.Properties.Resources.resources
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.csproj.GenerateResource.cache
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.csproj.CoreCompileInputs.cache
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.exe
+D:\Users\mina987\Desktop\универ\3 семестр\ООП\lab_1.2\obj\Debug\lab_1_2.pdb
