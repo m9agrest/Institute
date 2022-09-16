@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "lab4": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "Project"
+    }
+  }
+}
