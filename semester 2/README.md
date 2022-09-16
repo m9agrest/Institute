@@ -12,4 +12,4 @@ Physics<br>
 Practice<br>
 <br>
 ООП (Объектно-ориентированное программирование)<br>
-OOP
+OOP (Object-oriented programming)
