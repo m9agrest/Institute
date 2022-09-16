@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: lab7
+  commentId: N:lab7
+  id: lab7
+  children:
+  - lab7.Circle
+  - lab7.Figure
+  - lab7.Position
+  - lab7.program
+  - lab7.Rectangle
+  - lab7.Trapezium
+  langs:
+  - csharp
+  - vb
+  name: lab7
+  nameWithType: lab7
+  fullName: lab7
+  type: Namespace
+  assemblies:
+  - lab7
+references:
+- uid: lab7.Circle
+  commentId: T:lab7.Circle
+  name: Circle
+  nameWithType: Circle
+  fullName: lab7.Circle
+- uid: lab7.Figure
+  commentId: T:lab7.Figure
+  parent: lab7
+  name: Figure
+  nameWithType: Figure
+  fullName: lab7.Figure
+- uid: lab7.Position
+  commentId: T:lab7.Position
+  parent: lab7
+  name: Position
+  nameWithType: Position
+  fullName: lab7.Position
+- uid: lab7.program
+  commentId: T:lab7.program
+  name: program
+  nameWithType: program
+  fullName: lab7.program
+- uid: lab7.Rectangle
+  commentId: T:lab7.Rectangle
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: lab7.Rectangle
+- uid: lab7.Trapezium
+  commentId: T:lab7.Trapezium
+  name: Trapezium
+  nameWithType: Trapezium
+  fullName: lab7.Trapezium
+- uid: lab7
+  commentId: N:lab7
+  name: lab7
+  nameWithType: lab7
+  fullName: lab7

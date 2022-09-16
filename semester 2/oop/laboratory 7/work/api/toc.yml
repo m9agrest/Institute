@@ -1,0 +1,16 @@
+### YamlMime:TableOfContent
+- uid: lab7
+  name: lab7
+  items:
+  - uid: lab7.Circle
+    name: Circle
+  - uid: lab7.Figure
+    name: Figure
+  - uid: lab7.Position
+    name: Position
+  - uid: lab7.program
+    name: program
+  - uid: lab7.Rectangle
+    name: Rectangle
+  - uid: lab7.Trapezium
+    name: Trapezium

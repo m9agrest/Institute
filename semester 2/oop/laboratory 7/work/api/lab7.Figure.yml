@@ -1,0 +1,600 @@
+### YamlMime:ManagedReference
+items:
+- uid: lab7.Figure
+  commentId: T:lab7.Figure
+  id: Figure
+  parent: lab7
+  children:
+  - lab7.Figure.#ctor
+  - lab7.Figure.Center
+  - lab7.Figure.Perimeter
+  - lab7.Figure.setPosition(lab7.Position)
+  - lab7.Figure.Square
+  - lab7.Figure.ToString
+  langs:
+  - csharp
+  - vb
+  name: Figure
+  nameWithType: Figure
+  fullName: lab7.Figure
+  type: Class
+  source:
+    id: Figure
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 11
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nОбъект для хранения фигуры и работы с ней.\nСоздан в качестве родителя, чтобы от него наследовались остальные фигуры\n"
+  example: []
+  syntax:
+    content: public abstract class Figure
+    content.vb: Public MustInherit Class Figure
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - lab7.Circle
+  - lab7.Rectangle
+  - lab7.Trapezium
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: lab7.Figure.Square
+  commentId: P:lab7.Figure.Square
+  id: Square
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: Square
+  nameWithType: Figure.Square
+  fullName: lab7.Figure.Square
+  type: Property
+  source:
+    id: Square
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 16
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nПлощадь фигуры\n"
+  example: []
+  syntax:
+    content: public virtual double Square { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Overridable ReadOnly Property Square As Double
+  overload: lab7.Figure.Square*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: lab7.Figure.Perimeter
+  commentId: P:lab7.Figure.Perimeter
+  id: Perimeter
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: Perimeter
+  nameWithType: Figure.Perimeter
+  fullName: lab7.Figure.Perimeter
+  type: Property
+  source:
+    id: Perimeter
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 23
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nПериметр фигуры\n"
+  example: []
+  syntax:
+    content: public virtual double Perimeter { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Overridable ReadOnly Property Perimeter As Double
+  overload: lab7.Figure.Perimeter*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: lab7.Figure.#ctor
+  commentId: M:lab7.Figure.#ctor
+  id: '#ctor'
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: Figure()
+  nameWithType: Figure.Figure()
+  fullName: lab7.Figure.Figure()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 30
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nБазовый конструктор\n"
+  example: []
+  syntax:
+    content: public Figure()
+    content.vb: Public Sub New
+  overload: lab7.Figure.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: lab7.Figure.setPosition(lab7.Position)
+  commentId: M:lab7.Figure.setPosition(lab7.Position)
+  id: setPosition(lab7.Position)
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: setPosition(Position)
+  nameWithType: Figure.setPosition(Position)
+  fullName: lab7.Figure.setPosition(lab7.Position)
+  type: Method
+  source:
+    id: setPosition
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 41
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nУстановить позицию фигуры\n"
+  example: []
+  syntax:
+    content: public void setPosition(Position p)
+    parameters:
+    - id: p
+      type: lab7.Position
+      description: координаты позиции, нижний левый угол
+    content.vb: Public Sub setPosition(p As Position)
+  overload: lab7.Figure.setPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: lab7.Figure.Center
+  commentId: P:lab7.Figure.Center
+  id: Center
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: Figure.Center
+  fullName: lab7.Figure.Center
+  type: Property
+  source:
+    id: Center
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 46
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nПозиция центра фигуры\n"
+  example: []
+  syntax:
+    content: public virtual Position Center { get; }
+    parameters: []
+    return:
+      type: lab7.Position
+    content.vb: Public Overridable ReadOnly Property Center As Position
+  overload: lab7.Figure.Center*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: lab7.Figure.ToString
+  commentId: M:lab7.Figure.ToString
+  id: ToString
+  parent: lab7.Figure
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Figure.ToString()
+  fullName: lab7.Figure.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\Figure.cs
+    startLine: 55
+  assemblies:
+  - lab7
+  namespace: lab7
+  summary: "\nФорматирование строкового представления\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: Сформатированное строковое представление
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: lab7.Figure.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: lab7
+  commentId: N:lab7
+  name: lab7
+  nameWithType: lab7
+  fullName: lab7
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: lab7.Figure.Square*
+  commentId: Overload:lab7.Figure.Square
+  name: Square
+  nameWithType: Figure.Square
+  fullName: lab7.Figure.Square
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: lab7.Figure.Perimeter*
+  commentId: Overload:lab7.Figure.Perimeter
+  name: Perimeter
+  nameWithType: Figure.Perimeter
+  fullName: lab7.Figure.Perimeter
+- uid: lab7.Figure.#ctor*
+  commentId: Overload:lab7.Figure.#ctor
+  name: Figure
+  nameWithType: Figure.Figure
+  fullName: lab7.Figure.Figure
+- uid: lab7.Figure.setPosition*
+  commentId: Overload:lab7.Figure.setPosition
+  name: setPosition
+  nameWithType: Figure.setPosition
+  fullName: lab7.Figure.setPosition
+- uid: lab7.Position
+  commentId: T:lab7.Position
+  parent: lab7
+  name: Position
+  nameWithType: Position
+  fullName: lab7.Position
+- uid: lab7.Figure.Center*
+  commentId: Overload:lab7.Figure.Center
+  name: Center
+  nameWithType: Figure.Center
+  fullName: lab7.Figure.Center
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: lab7.Figure.ToString*
+  commentId: Overload:lab7.Figure.ToString
+  name: ToString
+  nameWithType: Figure.ToString
+  fullName: lab7.Figure.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
