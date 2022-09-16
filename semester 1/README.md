@@ -1,4 +1,4 @@
-#Предметы:<br>
+# Предметы:
 Архитектура вычислительных систем<br>
 Architecture of computing systems<br>
 <br>
