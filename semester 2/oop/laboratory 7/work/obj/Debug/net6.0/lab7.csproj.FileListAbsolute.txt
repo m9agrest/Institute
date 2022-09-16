@@ -1,0 +1,32 @@
+D:\Users\mina987\source\repos\lab7\bin\Debug\net6.0\lab7.exe
+D:\Users\mina987\source\repos\lab7\bin\Debug\net6.0\lab7.deps.json
+D:\Users\mina987\source\repos\lab7\bin\Debug\net6.0\lab7.runtimeconfig.json
+D:\Users\mina987\source\repos\lab7\bin\Debug\net6.0\lab7.dll
+D:\Users\mina987\source\repos\lab7\bin\Debug\net6.0\lab7.pdb
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.csproj.AssemblyReference.cache
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.AssemblyInfoInputs.cache
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.AssemblyInfo.cs
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.csproj.CoreCompileInputs.cache
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.dll
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\refint\lab7.dll
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.pdb
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\lab7.genruntimeconfig.cache
+D:\Users\mina987\source\repos\lab7\obj\Debug\net6.0\ref\lab7.dll
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.csproj.AssemblyReference.cache
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.AssemblyInfoInputs.cache
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.AssemblyInfo.cs
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.csproj.CoreCompileInputs.cache
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.dll
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\refint\lab7.dll
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.pdb
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.exe
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.deps.json
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.runtimeconfig.json
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.dll
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.pdb
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\bin\Debug\net6.0\lab7.xml
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.xml
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\lab7.genruntimeconfig.cache
+D:\Users\mina987\Desktop\универ\универ 2 семестр\ООП\lab7\obj\Debug\net6.0\ref\lab7.dll

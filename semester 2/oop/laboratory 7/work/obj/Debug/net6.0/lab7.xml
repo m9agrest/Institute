@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lab7</name>
+    </assembly>
+    <members>
+        <member name="T:lab7.Circle">
+            <summary>
+            Объект для хранения и работы с фигурой круг
+            </summary>
+        </member>
+        <member name="M:lab7.Circle.#ctor(System.Double)">
+            <summary>
+            Конструктор фигуры круг
+            </summary>
+            <param name="Radius">Радиус круга</param>
+        </member>
+        <member name="M:lab7.Circle.setPosition(lab7.Position)">
+            <summary>
+            Установить позицию фигуры
+            </summary>
+            <param name="p">координаты позиции, центра</param>
+        </member>
+        <member name="T:lab7.Figure">
+            <summary>
+            Объект для хранения фигуры и работы с ней.
+            Создан в качестве родителя, чтобы от него наследовались остальные фигуры
+            </summary>
+        </member>
+        <member name="P:lab7.Figure.Square">
+            <summary>
+            Площадь фигуры
+            </summary>
+        </member>
+        <member name="P:lab7.Figure.Perimeter">
+            <summary>
+            Периметр фигуры
+            </summary>
+        </member>
+        <member name="M:lab7.Figure.#ctor">
+            <summary>
+            Базовый конструктор
+            </summary>
+        </member>
+        <member name="M:lab7.Figure.setPosition(lab7.Position)">
+            <summary>
+            Установить позицию фигуры
+            </summary>
+            <param name="p">координаты позиции, нижний левый угол</param>
+        </member>
+        <member name="P:lab7.Figure.Center">
+            <summary>
+            Позиция центра фигуры
+            </summary>
+        </member>
+        <member name="M:lab7.Figure.ToString">
+            <summary>
+            Форматирование строкового представления
+            </summary>
+            <returns>Сформатированное строковое представление</returns>
+        </member>
+        <member name="T:lab7.Position">
+            <summary>
+            Объект для хранения и работы позиций
+            </summary>
+        </member>
+        <member name="F:lab7.Position.X">
+            <summary>
+            Координата X
+            </summary>
+        </member>
+        <member name="F:lab7.Position.Y">
+            <summary>
+            Координата Y
+            </summary>
+        </member>
+        <member name="M:lab7.Position.#ctor(System.Double,System.Double)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="x">Координата X</param>
+            <param name="y">Координата Y</param>
+        </member>
+        <member name="M:lab7.Position.#ctor">
+            <summary>
+            Конструктор, который за X и Y берёт 0
+            </summary>
+        </member>
+        <member name="M:lab7.Position.ToString">
+            <summary>
+            Форматирование строкового представления
+            </summary>
+            <returns>Сформатированное строковое представление</returns>
+        </member>
+        <member name="F:lab7.program.Pictures">
+            <summary>
+            Динамическая коллекция фигур
+            </summary>
+        </member>
+        <member name="T:lab7.Rectangle">
+            <summary>
+            Объект для хранения и работы с фигурой прямоугольник
+            </summary>
+        </member>
+        <member name="M:lab7.Rectangle.#ctor(System.Double,System.Double)">
+            <summary>
+            Конструктор прямоугольной фигуры
+            </summary>
+            <param name="Width">Ширина прямоугольника</param>
+            <param name="Height">Длинна прямоугольника</param>
+        </member>
+        <member name="T:lab7.Trapezium">
+            <summary>
+            Объект для хранения и работы с фигурой трапеция
+            </summary>
+        </member>
+        <member name="M:lab7.Trapezium.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Конструктор фигры трапеция
+            </summary>
+            <param name="WidthTop">Ширина верхнего основания</param>
+            <param name="WidthBottom">Ширина нижнего основания</param>
+            <param name="Height">Высота</param>
+        </member>
+    </members>
+</doc>

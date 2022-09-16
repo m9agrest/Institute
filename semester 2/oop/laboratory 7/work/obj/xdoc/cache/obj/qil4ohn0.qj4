@@ -1,0 +1,10 @@
+id: lab7
+language: CSharp
+name:
+  Default: lab7
+qualifiedName:
+  Default: lab7
+type: Assembly
+modifiers: {}
+items: []
+references: {}
