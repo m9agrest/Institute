@@ -1,0 +1,12 @@
+C:\Users\student\Desktop\work\bin\Debug\lab3dis.exe.config
+C:\Users\student\Desktop\work\bin\Debug\lab3dis.exe
+C:\Users\student\Desktop\work\bin\Debug\lab3dis.pdb
+C:\Users\student\Desktop\work\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\work\bin\Debug\Newtonsoft.Json.xml
+C:\Users\student\Desktop\work\obj\Debug\lab4dis.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\work\obj\Debug\lab3dis.Form1.resources
+C:\Users\student\Desktop\work\obj\Debug\lab3dis.Properties.Resources.resources
+C:\Users\student\Desktop\work\obj\Debug\lab4dis.csproj.GenerateResource.cache
+C:\Users\student\Desktop\work\obj\Debug\lab4dis.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\work\obj\Debug\lab3dis.exe
+C:\Users\student\Desktop\work\obj\Debug\lab3dis.pdb
