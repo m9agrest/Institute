@@ -1,0 +1,15 @@
+D:\Users\mina987\Desktop\lab2dis\bin\Debug\net6.0\lab2dis.exe
+D:\Users\mina987\Desktop\lab2dis\bin\Debug\net6.0\lab2dis.deps.json
+D:\Users\mina987\Desktop\lab2dis\bin\Debug\net6.0\lab2dis.runtimeconfig.json
+D:\Users\mina987\Desktop\lab2dis\bin\Debug\net6.0\lab2dis.dll
+D:\Users\mina987\Desktop\lab2dis\bin\Debug\net6.0\lab2dis.pdb
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.csproj.AssemblyReference.cache
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.AssemblyInfoInputs.cache
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.AssemblyInfo.cs
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.csproj.CoreCompileInputs.cache
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.dll
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\refint\lab2dis.dll
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.pdb
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\lab2dis.genruntimeconfig.cache
+D:\Users\mina987\Desktop\lab2dis\obj\Debug\net6.0\ref\lab2dis.dll
