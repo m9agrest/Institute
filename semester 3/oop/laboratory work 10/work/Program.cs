@@ -1,17 +1,36 @@
 ﻿using System.Globalization;
+using System.Text.RegularExpressions;
 
 class program
 {
     static void Main(string[] arg)
     {
-        string fio = "дЕмо теСТОВич         бИТОВ";
         Context context = new Context();
-        Console.WriteLine("Original string:\n" + context.Processing(fio) + "\n");
-        Console.WriteLine("Strategy null:\n" + context.Processing(fio) + "\n");
-        context.Strategy = new StrategyA();
-        Console.WriteLine("StrategyA:\n" + context.Processing(fio) + "\n");
-        context.Strategy = new StrategyB();
-        Console.WriteLine("StrategyB:\n" + context.Processing(fio));
+        string text = "";
+
+        context.Strategy = new StrategyEmail();
+        Console.WriteLine("Strategy Email");
+        text = "wdwdd.wd";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "   wd@wdd.wd";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "sqsdwfiuweg@gmail.com";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "sqsdwfiu weg@gmail.com";
+        Console.WriteLine(text + " - " + context.Check(text));
+
+        context.Strategy = new StrategyAuto();
+        Console.WriteLine("Strategy Auto");
+        text = "ф1тт1";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "   А120гБ";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "а111аа";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "а12бв";
+        Console.WriteLine(text + " - " + context.Check(text));
+        text = "а1 42бв";
+        Console.WriteLine(text + " - " + context.Check(text));
     }
 }
 
@@ -20,35 +39,26 @@ class Context
     public IStrategy Strategy { get; set; } = null;
     public Context(IStrategy Strategy) => this.Strategy = Strategy;
     public Context() { }
-    public string Processing(string text) => Strategy != null ? Strategy.Convert(text) : text;
+
+    public bool Check(string text) => Strategy != null ? Strategy.Check(text) : false;
 }
 
 
 interface IStrategy
 {
-    public string Convert(string text);
+    public bool Check(string text);
 }
-class StrategyA : IStrategy
+class StrategyEmail : IStrategy
 {
-    static TextInfo textInfo = new CultureInfo("ru-RU").TextInfo;
-    public string Convert(string text) => textInfo.ToTitleCase(textInfo.ToLower(text.Trim()));
+    public bool Check(string text) => Regex.IsMatch(text.Trim(), @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,})+)$");
 }
-class StrategyB : IStrategy
+class StrategyAuto : IStrategy
 {
-    static TextInfo textInfo = new CultureInfo("ru-RU").TextInfo;
-    public string Convert(string text)
-    {
-        string[] arr = text.Split(' ');
-        List<string> list = new List<string>();
-        for(int i = 0; i < arr.Length; i++)
-            if(arr[i] != null && arr[i] != "")
-                list.Add(textInfo.ToTitleCase(textInfo.ToLower(arr[i])));
-        string r = "";
-        for (int i = 0; i < list.Count; i++)
-            if (i + 1 < list.Count)
-                r += list[i] + " ";
-            else
-                r += list[i];
-        return r;
-    }
+    public bool Check(string text) => Regex.IsMatch(text.Trim().ToLower(), @"[а-я]\d{3}[а-я]{2}");
 }
+/*
+class StrategyPhone : IStrategy
+{
+    public bool Check(string text) => Regex.IsMatch(text.Trim(), @"\\+?\s*\d{1,3}\s*\\(?\s*\d{3}\s*\\)?\s*\\-?\s*\d{3}\s*\\-?\s*\d{2}\s*\\-?\s*\d{2}");
+}
+*/
