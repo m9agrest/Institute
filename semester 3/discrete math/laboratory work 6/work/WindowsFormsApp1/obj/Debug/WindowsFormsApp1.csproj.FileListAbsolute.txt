@@ -1,0 +1,63 @@
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab3\TryTwo\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+G:\WorkFlash\2 КУРС\Дискретная математика\lab4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+G:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab5\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\WorkFlash\2 КУРС\Дискретная математика\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\student\Desktop\lab6\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
