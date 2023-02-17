@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ec2ArbZFw29t3E4TC5ZyYtpBjo5Xjl1Xh4tsEEuWgpmzZYRc+cdV9c5ULkKd+RBygUgCdX9iIEZunHG8Ny9fZQ==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\mina987\\Desktop\\универ\\3 семестр\\ооп\\lab345\\lab345\\lab345.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

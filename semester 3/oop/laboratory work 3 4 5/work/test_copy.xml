@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<buyers>
+	<buyer>
+		<name></name>
+		<lastname></lastname>
+		<patronymic></patronymic>
+		<gender></gender>
+		<height></height>
+		<width></width>
+		<birthday>
+			<day></day>
+			<month></month>
+			<year></year>
+		</birthday>
+		<mobile></mobile>
+		<home>
+			<mail></mail>
+			<country></country>
+			<region></region>
+			<area></area>
+			<city></city>
+			<street></street>
+			<house></house>
+			<apartment></apartment>
+		</home>
+		<creditcard></creditcard>
+		<bankaccaunt></bankaccaunt>
+	</buyer>
+</buyers>
