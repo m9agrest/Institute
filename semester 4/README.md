@@ -10,3 +10,6 @@ Computer graphics<br>
 <br>
 Организация баз данных<br>
 Organization of databases<br>
+<br>
+Операционные системы<br>
+Operating systems<br>

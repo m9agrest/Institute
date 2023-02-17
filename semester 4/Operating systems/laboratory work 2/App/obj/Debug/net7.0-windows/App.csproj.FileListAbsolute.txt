@@ -1,0 +1,17 @@
+D:\Users\mina987\Desktop\OS lab\lab2\App\bin\Debug\net7.0-windows\App.exe
+D:\Users\mina987\Desktop\OS lab\lab2\App\bin\Debug\net7.0-windows\App.deps.json
+D:\Users\mina987\Desktop\OS lab\lab2\App\bin\Debug\net7.0-windows\App.runtimeconfig.json
+D:\Users\mina987\Desktop\OS lab\lab2\App\bin\Debug\net7.0-windows\App.dll
+D:\Users\mina987\Desktop\OS lab\lab2\App\bin\Debug\net7.0-windows\App.pdb
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.csproj.AssemblyReference.cache
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.Form1.resources
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.csproj.GenerateResource.cache
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.AssemblyInfoInputs.cache
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.AssemblyInfo.cs
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.csproj.CoreCompileInputs.cache
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.dll
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\refint\App.dll
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.pdb
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\App.genruntimeconfig.cache
+D:\Users\mina987\Desktop\OS lab\lab2\App\obj\Debug\net7.0-windows\ref\App.dll
