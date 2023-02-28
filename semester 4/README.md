@@ -13,3 +13,7 @@ Organization of databases<br>
 <br>
 Операционные системы<br>
 Operating systems<br>
+<br>
+ТАФЯ (Теория автоматов и формальных языков)<br>
+TAFL (Theory of automata and formal languages)<br>
+

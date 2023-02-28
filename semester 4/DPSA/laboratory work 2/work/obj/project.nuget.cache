@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Agafw3GUYEDkjpUHoYDR+ccfGmakVEQ6yf1+pXwvVs42cXFLSajnWx20K4KEt9xtdcpL8l06kUdG77DZ8xNv7g==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\Institute\\semester 4\\DPSA\\laboratory work 2\\work\\work.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mina987\\.nuget\\packages\\nito.collections.deque\\1.1.1\\nito.collections.deque.1.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
