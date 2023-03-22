@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>Лабораторная работа 1</title>
+	<style>
+		.pos
+		{
+			position: relative;
+		}
+		.button
+		{
+			width : 148px;
+			height: 43px;
+			background-color: #fafafa;
+			margin-bottom: 10px;
+		}
+		.block
+		{
+			width: 248px;
+			height: 248px;
+		}
+		.button:hover
+		{
+			background-color: #f0f0f0;
+		}
+		.button:active
+		{
+			background-color: #a0a0a0;
+		}
+		.border
+		{
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+	</style>
+	<script>
+		function show(id)
+		{
+			if(id.style.display == "block")
+			{
+				id.style.display = "none";
+			}
+			else
+			{
+				id.style.display = "block";
+			}
+		}
+	</script>
+</head>
+<body>
+	<button class="pos button border" onclick="show(block1)">нажми на меня</button>
+	<div class="pos block border" id="block1" style="display:none;">блок 1</div>
+	<br>
+	<button class="pos button border" onclick="show(block2)">нажми на меня</button>
+	<div class="pos block border" id="block2" style="display:none;">блок 2</div>
+	<br>
+	<button class="pos button border" onclick="show(block3)">нажми на меня</button>
+	<div class="pos block border" id="block3" style="display:none;">блок 3</div>
+</body>
