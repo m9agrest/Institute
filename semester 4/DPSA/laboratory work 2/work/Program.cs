@@ -1,6 +1,8 @@
 ﻿using Nito.Collections;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Principal;
 
 class program
 {
@@ -17,107 +19,46 @@ class program
         Console.WriteLine("\n\nРабота с Deque");
         DequeTask1(10);
     }
-    
-
-
-
-    static int Get(Stack<int> stack, int i)
-    {
-        if(i < stack.Count)
-        {
-            Stack<int> N = new Stack<int>();
-            int r = 0;
-            for (int I = 0; I <= i; I++)
-            {
-                r = stack.Pop();
-                N.Push(r);
-            }
-            for (int I = 0; I <= i; I++)
-            {
-                int b = N.Pop();
-                stack.Push(b);
-            }
-            return r;
-        }
-        throw new Exception();
-    }
-    static int Get(Queue<int> stack, int i)
-    {
-        if (i < stack.Count)
-        {
-            int r = 0;
-            for (int I = 0; I < stack.Count; I++)
-            {
-                int b = stack.Dequeue();
-                if (i == I)
-                    r = b;
-                stack.Enqueue(b);
-            }
-            return r;
-        }
-        throw new Exception();
-    }
-    static int Get(Deque<int> stack, int i)
-    {
-        if(i < stack.Count)
-        {
-            int r = 0;
-            for(int I = 0; I < stack.Count; I++)
-            {
-                int b = stack.RemoveFromFront();
-                if (i == I)
-                    r = b;
-                stack.AddToBack(b);
-            }
-            return r;
-        }
-
-        throw new Exception();
-    }
-
-
     static void StackTask1()
     {
         Console.WriteLine("Задание 1");
         Console.WriteLine("Задание 1.1");
         Stack<int> stack = new Stack<int>();
-        for(int i = 0; i < 8; i++)
-        {
-            stack.Push(Rand());
-        }
+        Stack<int> _stack = new Stack<int>();
+        for (int i = 0; i < 8; i++) stack.Push(Rand());
         Console.WriteLine(String(stack));
-
-        //stack.Push(stack.ElementAt(2) + stack.ElementAt(3));
-        stack.Push(Get(stack, 2) + Get(stack, 3));
+                for (int i = 0; i < 5; i++) _stack.Push(stack.Pop());
+                int a = stack.Peek() + _stack.Peek();
+                for (int i = 0; i < 5; i++) stack.Push(_stack.Pop());
+                stack.Push(a);
         Console.WriteLine(String(stack));
-
         Console.WriteLine("Задание 1.2");
         stack = new Stack<int>();
-        for (int i = 0; i < 7; i++)
-        {
-            stack.Push(Rand());
-        }
+        _stack = new Stack<int>();
+        for (int i = 0; i < 7; i++) stack.Push(Rand());
         Console.WriteLine(String(stack));
-        //stack.Push(stack.ElementAt(3) + stack.ElementAt(4) + stack.ElementAt(5));
-        stack.Push(Get(stack, 3) + Get(stack, 4) + Get(stack, 5));
+                for (int i = 0; i < 4; i++)  _stack.Push(stack.Pop());
+                int b = _stack.Peek() + stack.Peek();
+                stack.Push(_stack.Pop());
+                b += _stack.Peek();
+                for (int i = 0; i < 3; i++) stack.Push(_stack.Pop());
+                stack.Push(b);
         Console.WriteLine(String(stack));
     }
     static void StackTask2(int count)
     {
         Console.WriteLine("Задание 2");
         Stack<int> stack = new Stack<int>();
-        for (int i = 0; i < count; i++)
-        {
-            stack.Push(Rand());
-        }
-        Console.WriteLine(String(stack));
-
         Stack<int> _stack = new Stack<int>();
-        for(int i = 1; i < count; i += 2)
-        {
-            _stack.Push(Get(stack, count - i));
-        }
-        stack = _stack;
+        for (int i = 0; i < count; i++) stack.Push(Rand());
+        Console.WriteLine(String(stack));
+                for (int i = 1; i < count; i++)
+                    if (i % 2 == 0)
+                        _stack.Push(stack.Pop());
+                    else
+                        stack.Pop();
+                count = _stack.Count;
+                for(int i = 0; i < count; i++) stack.Push(_stack.Pop());
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(stack));
     }
@@ -125,58 +66,34 @@ class program
     {
         Console.WriteLine("Задание 3");
         Stack<forTask3> stack = new Stack<forTask3>();
-        for (int i = 0; i < count; i++)
-        {
-            stack.Push(new forTask3(Rand(), Rand()));
-        }
+        for (int i = 0; i < count; i++) stack.Push(new forTask3(Rand(), Rand()));
         Console.WriteLine(String(stack));
-        forTask3 a = stack.Pop();
-        stack.Pop();
-        stack.Push(a);
+                forTask3 a = stack.Pop();
+                stack.Pop();
+                stack.Push(a);
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(stack));
     }
-
     static void QueueTask1(int count)
     {
         Console.WriteLine("Задание 1");
         Queue<int> queue = new Queue<int>();
-        for(int i = 0; i < count; i++)
-        {
-            queue.Enqueue(Rand());
-        }
-        
+        for(int i = 0; i < count; i++) queue.Enqueue(Rand());
         Console.WriteLine(String(queue));
-        int max = Get(queue, 0);
-        for(int i = 1; i < count; i++)
-        {
-            int a = Get(queue, i);
-            if (a > max)
-            {
-                max = a;
-            }
-        }
-        Queue<int> _queue = new Queue<int>();
-        for (int i = 0; i < count; i++)
-        {
-            int a = Get(queue, i);
-            if (i != 0)
-            {
-                if(Get(queue, i - 1) == max)
+                int max = queue.Peek();
+                for (int i = 0; i < queue.Count; i++)
                 {
-                    a = 0;
+                    if (queue.Peek() > max) max = queue.Peek();
+                    queue.Enqueue(queue.Dequeue());
                 }
-            }
-            if (i < count - 1)
-            {
-                if (Get(queue, i + 1) == max)
-                {
-                    a = 0;
-                }
-            }
-            _queue.Enqueue(a);
-        }
-        queue = _queue;
+                for (int i = 0; i < count; i++)
+                    if (queue.Peek() == max)
+                    {
+                        queue.Enqueue(0);
+                        queue.Enqueue(queue.Dequeue());
+                        queue.Enqueue(0);
+                    }
+                    else  queue.Enqueue(queue.Dequeue());
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(queue));
     }
@@ -184,23 +101,9 @@ class program
     {
         Console.WriteLine("Задание 2");
         Queue<int> queue = new Queue<int>();
-        for (int i = 0; i < count; i++)
-        {
-            queue.Enqueue(Rand(-100, 100));
-        }
+        for (int i = 0; i < count; i++) queue.Enqueue(Rand(-100, 100));
         Console.WriteLine(String(queue));
-
-        Queue<int> _queue = new Queue<int>();
-        for (int i = 0; i < count; i++)
-        {
-            if (Get(queue, i) > 0)
-                _queue.Enqueue(Get(queue, i) * -1);
-            else
-                _queue.Enqueue(Get(queue, i));
-
-        }
-        queue = _queue;
-
+                for (int i = 0; i < queue.Count; i++) queue.Enqueue(-1 * Math.Abs(queue.Dequeue()));
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(queue));
     }
@@ -208,25 +111,16 @@ class program
     {
         Console.WriteLine("Задание 3");
         Queue<int> queue = new Queue<int>();
-        for (int i = 0; i < count; i++)
-        {
-            queue.Enqueue(Rand(1, 100));
-        }
+        for (int i = 0; i < count; i++) queue.Enqueue(Rand(1, 100));
         Console.WriteLine(String(queue));
-
-        Queue<int> _queue = new Queue<int>();
-        int a = 1;
-        for (int i = 0; i < count; i++)
-        {
-            a *= Get(queue, i);
-        }
-        _queue.Enqueue(a);
-        for (int i = 0; i < count; i++)
-        {
-            _queue.Enqueue(Get(queue, i));
-        }
-        queue = _queue;
-
+                int a = 1;
+                for (int i = 0; i < queue.Count; i++)
+                {
+                    a *= queue.Peek();
+                    queue.Enqueue(queue.Dequeue());
+                }
+                queue.Enqueue(a);
+                for (int i = 0; i < queue.Count - 1; i++) queue.Enqueue(queue.Dequeue());
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(queue));
     }
@@ -235,74 +129,52 @@ class program
     {
         Console.WriteLine("Задание 1");
         Deque<int> deque = new Deque<int>();
-        for(int i = 0; i < count; i++)
-        {
-            deque.AddToBack(Rand());
-        }
-        int max = Get(deque, 0);
-        for(int i = 1; i < count; i++)
-        {
-            if (Get(deque, i) > max)
-                max = Get(deque, i);
-        }
+        for(int i = 0; i < count; i++) deque.AddToBack(Rand());
         Console.WriteLine(String(deque));
-
-        Deque<int> _deque = new Deque<int>();
-        for (int i = 0; i < count; i++)
-        {
-            int a = Get(deque, i);
-            if (i != 0)
-            {
-                if (Get(deque, i - 1) == max)
-                    a = 0;
-            }
-            if(i < count - 1)
-            {
-                if (Get(deque, i + 1) == max)
-                    a = 0;
-            }
-            _deque.AddToBack(a);
-        }
-        deque = _deque;
+                int max = deque.RemoveFromBack();
+                deque.AddToBack(max);
+                for (int i = 0; i < deque.Count; i++)
+                {
+                    int a = deque.RemoveFromBack();
+                    if (a > max) max = a;
+                    deque.AddToFront(a);
+                }
+                for (int i = 0; i < count; i++)
+                {
+                    int a = deque.RemoveFromBack();
+                    if (a == max)
+                    {
+                        deque.AddToFront(0);
+                        deque.AddToFront(a);
+                        deque.AddToFront(0);
+                    }
+                    else deque.AddToFront(a);
+                }
         Console.WriteLine("Преобразование по заданию:");
         Console.WriteLine(String(deque));
     }
-
-
     static string String(Stack<int> stack)
     {
         string r = "";
-        for(int  i = 0; i < stack.Count; i++)
-        {
-            r += stack.ElementAt(i) + " ";
-        }
+        foreach(int i in stack) r += i + " ";
         return r;
     }
     static string String(Queue<int> queue)
     {
         string r = "";
-        for (int i = 0; i < queue.Count; i++)
-        {
-            r += queue.ElementAt(i) + " ";
-        }
+        foreach(int i in queue) r += i + " ";
         return r;
     }
     static string String(Stack<forTask3> stack)
     {
         string r = "";
-        for (int i = 0; i < stack.Count; i++)
-        {
-            r += stack.ElementAt(i) + " ";
-        }
+        foreach(forTask3 i in stack) r += i + " ";
         return r;
     }
     static string String(Deque<int> deque)
     {
         string r = "";
-        for (int i = 0; i < deque.Count; i++)
-        {
-            r += deque.ElementAt(i) + " ";
-        }
+        foreach(int i in deque) r += i + " ";
         return r;
     }
     static Random rnd = new Random();

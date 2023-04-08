@@ -1,83 +1,81 @@
-using System;
-using System.Collections.Generic;
+﻿using System.Text.RegularExpressions;
 
-namespace work
+
+char[] keysSeparator = { ':', '<', '>', '=', '+', '-', '*', '/', ';' };
+string[] keysSeparatorCombo = { "<=", ">=", ":=" };
+string code = """
+    for i:=10         
+    to 100 do        
+
+
+
+    y:= i+       
+    
+    
+    
+    x;
+    """;
+
+
+Console.WriteLine("изначальный код:\n" + code);
+code.Replace('\t', ' ');
+code.Replace('\n', ' ');
+
+for (int i = 0; i < keysSeparator.Length; i++)
 {
-    internal static class Program
+    string reg = @"\" + keysSeparator[i] + "";
+    code = Regex.Replace(code, reg, " " + keysSeparator[i] + " ");
+}
+
+
+for(int i = 0; i < keysSeparatorCombo.Length; i++)
+{
+    string reg = @"";
+    string Separator = "";
+    for (int j = 0; j < keysSeparatorCombo[i].Length; j++)
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        reg += keysSeparatorCombo[i][j];
+        Separator += keysSeparatorCombo[i][j];
+        if (j < keysSeparatorCombo[i].Length - 1)
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            //Application.Run(new Form1());
-            NonSpaceAndTab("""
-                using System;
-                using System.Collections.Generic;
-                using System.Linq;
-                using System.Text;
-                using System.Threading.Tasks;
-
-                namespace ConsoleApp2
-                {
-                    internal class Program
-                    {
-                        static void Main(string[] args)
-                        {
-                            string a = "asd      asd", b = "erew      ", d, e = "243", f, g;
-                            d = a + "           wdwdwdwd";
-                            f = e + a;
-                            g = d + f;
-                        }
-                    }
-                }
-                """);
+            reg += "  ";
         }
+    }
+    code = Regex.Replace(code, reg, Separator);
+}
+code.Trim();
+code = Regex.Replace(code, @"\s{2,}", " ");
 
+Console.WriteLine("Преобразованный код:\n" + code);
 
-
-        static string[] NonSpaceAndTab(string arg)
+string[] codes = code.Split(' ');
+Console.WriteLine("Разделение:\n");
+for(int i = 0; i < codes.Length; i++)
+{
+    if (codes[i].Length >= 1)
+    {
+        Console.Write(codes[i]);
+        bool check = false;
+        if (int.TryParse(codes[i], out int a))
         {
-            string[] lex =
+            Console.WriteLine(" - литерал");
+            check = true;
+        }
+        if (!check)
+        {
+            for (int j = 0; j < keysSeparator.Length; j++)
             {
-                "using",
-                "int",
-                "float",
-                "double",
-                "long",
-                "float",
-                "short",
-                "bool",
-                ""
-            };
-            string Code = "STRINGBYID";
-            List<string> ret = new List<string>();
-            ret.Add("");
-            int I = 0;
-            bool write = false;
-            for (int i = 0; i < arg.Length; i++)
-                if (write)
-                    if (arg[i] != '\"')
-                        ret[I] += arg[i];
-                    else// if(i != 0 && arg[i - 1] != '\\')
-                        write = false;
-                else if (arg[i] == '\"')
+                if (codes[i][0] == keysSeparator[j])
                 {
-                    write = true;
-                    I++;
-                    ret.Add("");
-                    ret[0] += (Code + I);
+                    Console.WriteLine(" - разделитель");
+                    check = true;
+                    break;
                 }
-                else if(arg[i] != ' ' && arg[i] != '\t')
-                    ret[0] += arg[i];
-            Console.WriteLine("Code\n" + ret[0] + "\n\n\n");
-            for (int i = 1; i < ret.Count; i++)
-                Console.WriteLine("STRINGBYID" + i + ": \"" + ret[i] + "\"");
-            return ret.ToArray();
+            }
+        }
+        if (!check)
+        {
+            Console.WriteLine(" - идентификатор");
         }
     }
 }
