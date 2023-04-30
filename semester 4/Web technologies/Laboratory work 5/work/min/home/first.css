@@ -1,0 +1,60 @@
+.first
+{
+	margin-top: 80px;
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.first__content
+{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.first__content-block
+{
+	margin-right: 33px;
+}
+.first__title
+{
+	font-family:'HelveticaNeueCondensedBlack';
+	display: flex;
+    align-items: center;
+}
+.first__title-1
+{
+	height: 133px;
+	font-size: 133pt;
+	margin-bottom: 31px;
+}
+.first__title-2
+{
+	height: 109px;
+	font-size: 109pt;
+	margin-bottom: 37px;
+}
+.first__text
+{
+	font-family:'MontserratItalic';
+	width: 520px;/*для автопереноса*/
+	font-size: 12pt;
+	margin-left: 5px;
+}
+.first-line
+{
+	margin-left: 70px;
+	width: 2px;
+	height: 600px;
+	background-color: #f9e5c8;
+}
+.first-image
+{
+	width: calc( 100vw - 200px );
+	height: 680px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:/*right ?*/center;
+	background-image: url(../image/1.png);
+}

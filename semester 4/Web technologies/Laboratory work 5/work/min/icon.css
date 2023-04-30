@@ -1,0 +1,26 @@
+.icon
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.icon-facebook
+{
+	background-image: url(icon/facebook.svg);
+}
+.icon-instagram
+{
+	background-image: url(icon/instagram.svg);
+}
+.icon-twitter
+{
+	background-image: url(icon/twitter.svg);
+}
+.icon-whatsapp
+{
+	background-image: url(icon/whatsapp.svg);
+}
+.icon-cooffee
+{
+	background-image: url(icon/coffee_cup.svg);
+}

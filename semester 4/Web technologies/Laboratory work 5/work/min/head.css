@@ -1,0 +1,48 @@
+.head
+{
+	min-height: 67px;
+	height: auto;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: #0c1b1f;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.head__logo-icon
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+}
+.head__logo
+{
+	font-family: 'HelveticaNeueThin';
+	font-size: 24pt;
+	color: white;
+	display: flex;
+}
+.head__item
+{
+	margin: 10px;
+	color: white;
+	text-decoration-line: none;
+	font-size: 13pt;
+	font-family: 'MontserratLight';
+}
+.head__item-selected
+{
+	font-family: 'MontserratBold';
+}
+.head__social
+{
+	display: flex;
+}
+.head__social-icon
+{
+	margin: 5px;
+	width: 24px;
+	height: 24px;
+}

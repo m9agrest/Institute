@@ -1,0 +1,30 @@
+.footer
+{
+    display: flex;
+    position: relative;
+    height: 640px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-line
+{
+	height: 40px;
+	width: 100%;
+	background-color: #0c1b1f;
+	bottom: 0;
+	position: absolute;
+}
+.footer__logo
+{
+	font-family: 'HelveticaNeueThin';
+	font-size: 60pt;
+	color: white;
+	display: flex;
+}
+.footer__logo-icon
+{
+	width: 80px;
+	height: 80px;
+	margin-right: 8px;
+}

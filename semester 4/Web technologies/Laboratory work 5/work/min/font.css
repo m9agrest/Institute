@@ -1,0 +1,30 @@
+@font-face
+{
+	font-family:'HelveticaNeueCondensedBlack';
+	src:url(font/HelveticaNeueCondensedBlack.ttf);
+}
+@font-face
+{
+	font-family:'HelveticaNeueMedium';
+	src:url(font/HelveticaNeueMedium.ttf);
+}
+@font-face
+{
+	font-family:'HelveticaNeueThin';
+	src:url(font/HelveticaNeueThin.ttf);
+}
+@font-face
+{
+	font-family:'MontserratBold';
+	src:url(font/MontserratBold.ttf);
+}
+@font-face
+{
+	font-family:'MontserratItalic';
+	src:url(font/MontserratItalic.ttf);
+}
+@font-face
+{
+	font-family:'MontserratLight';
+	src:url(font/MontserratLight.ttf);
+}
