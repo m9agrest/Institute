@@ -42,19 +42,12 @@ namespace work
         {
             Token[] tokens = generation.Tokens(generation.Split(richTextBox1.Text));
             listBox1.Items.Clear();
-            /*LL a = new LL(tokens);
-            listBox1.Items.Clear();
-            listBox1.Items.Add(a.действие(0));*/
-            try
-            {
+
+            try {
                 LR a = new LR(tokens);
                 a.Check();
                 listBox1.Items.Add("Проверено успешно");
-            }
-            catch(Exception E)
-            {
-                listBox1.Items.Add(E.ToString());
-            }
+            } catch(Exception E) {  listBox1.Items.Add(E.ToString()); }
 
         }
     }

@@ -106,6 +106,11 @@ namespace work
         public TokenType Type;
         public string Value;
 
+        public Token(TokenType type)
+        {
+            Type = type;
+        }
+
         public Token(string word)
         {
 

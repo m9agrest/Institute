@@ -98,8 +98,24 @@ namespace work
         }
         void _5()
         {
-            while(Curent() != null && Curent().Type != TokenType.ENDLINE)
+            _CurentUp();
+            if(Curent().Type == TokenType.IDENTIFIER || Curent().Type == TokenType.LITERAL)
+            {
                 i++;
+                if(Curent() != null)
+                {
+                    if (Curent().Type == TokenType.PLUS ||
+                        Curent().Type == TokenType.MINUS ||
+                        Curent().Type == TokenType.MULTIPLY ||
+                        Curent().Type == TokenType.DIVIDE)
+                    {
+                        _5();
+                    }
+                    else if (Curent().Type == TokenType.ENDLINE)
+                        i++;
+                    else Error2();
+                }
+            } else Error2();
         }
 
         void _16()
@@ -128,7 +144,7 @@ namespace work
         {
             if(_CurentUp().Type == TokenType.WHILE)
             {
-                _5();
+                expr();
                 _CurentUp();
                 while (Curent() != null && Curent().Type != TokenType.LOOP)
                     _1();
@@ -138,8 +154,20 @@ namespace work
             } else Error2();
         }
 
+        void expr()
+        {
+            List<Token> stack = new List<Token>();
+            i++;
+            while(Curent() != null && Curent().Type != TokenType.ENDLINE)
+            {
+                stack.Add(Curent());
+                i++;
+            }
+            _Curent();
 
+        }
 
+        #region Ошибки
         private void Error1()
         {
             if (Curent() == null)
@@ -176,5 +204,6 @@ namespace work
             }
             throw new Exception((1 + I) + "-ый элемент (" + Curent() + "), не ожидался");
         }
+        #endregion
     }
 }
