@@ -67,7 +67,7 @@ namespace work
                         case TokenType.IDENTIFIER:
                             _4();
                             break;
-                        case TokenType.DO:
+                        case TokenType.SELECT:
                             _25();
                             break;
                         case TokenType.ENDLINE:
@@ -126,19 +126,58 @@ namespace work
         }
         void _25()
         {
-            if(_CurentUp().Type == TokenType.WHILE)
+            if(_CurentUp().Type == TokenType.CASE)
             {
-                _5();
-                _CurentUp();
-                while (Curent() != null && Curent().Type != TokenType.LOOP)
-                    _1();
-                if (Curent() == null)
-                    Error1();
-                i++;
+                if (_CurentUp().Type == TokenType.IDENTIFIER)
+                {
+                    if (_CurentUp().Type == TokenType.ENDLINE)
+                    {
+                        while (Curent() != null && Curent().Type != TokenType.END)
+                            _28();
+                        _Curent();
+                        if (_CurentUp().Type != TokenType.SELECT) Error2();
+                        i++;
+
+                    } else Error2();
+                } else Error2();
             } else Error2();
         }
-
-
+        void _28()
+        {
+            if(_CurentUp().Type == TokenType.CASE)
+            {
+                _CurentUp();
+                if (Curent().Type == TokenType.LITERAL)
+                {
+                    if(_CurentUp().Type == TokenType.ENDLINE)
+                    {
+                        _28x(false);
+                    }
+                    else if(Curent().Type == TokenType.TO)
+                    {
+                        if (_CurentUp().Type == TokenType.LITERAL && _CurentUp().Type == TokenType.ENDLINE)
+                        {
+                            _28x(false);
+                        } else Error2();
+                    } else Error2();
+                }
+                else if(Curent().Type == TokenType.ELSE && _CurentUp().Type == TokenType.ENDLINE)
+                {
+                    _28x(true);
+                } else Error2();
+            } else Error2();
+        }
+        void _28x(bool end)
+        {
+            while (Curent() != null && Curent().Type != TokenType.CASE && Curent().Type != TokenType.END)
+                _1();
+            if(_Curent().Type == TokenType.CASE)
+            {
+                if (end) Error2();
+                i--;
+            }
+            else if(Curent().Type != TokenType.END) Error2();
+        }
 
         private void Error1()
         {
