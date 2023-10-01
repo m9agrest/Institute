@@ -1,9 +1,9 @@
-Dim a, b as integer
+dim a, b as integer
 
 b = 12 * 32
 
 do while a > 12
-	Dim c as double
+	dim c as double
 	c = a - b
 	do while b > 12
 		a += 12

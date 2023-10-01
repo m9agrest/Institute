@@ -9,7 +9,6 @@ t1.Start();
 t2.Start();
 t3.Start();
 
-
 void func1() => func(0, 9);
 void func2() => func(10, 19);
 void func3() => func(100, 120);

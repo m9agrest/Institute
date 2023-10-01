@@ -48,7 +48,7 @@ namespace work
         DIM, AS,
         DO, WHILE, LOOP,
         PLUS, MINUS, MULTIPLY, DIVIDE,
-        OR, AND,
+        OR, AND, NOT,
         DEGREE,
         EQUAL, MORE, LESS,
         COMMA, DOT, COLON, SEMICOLON,
@@ -67,19 +67,20 @@ namespace work
             TokenType.EQUAL, TokenType.MORE, TokenType.LESS,
             TokenType.COMMA, TokenType.DOT, TokenType.COLON,
             TokenType.SEMICOLON, TokenType.LPAR, TokenType.RPAR,
-            TokenType.UNDERSCORE
+            TokenType.UNDERSCORE, TokenType.NOT
 };
         public static Dictionary<string, TokenType> SpecialWords = new Dictionary<string, TokenType>() {
             {"integer", TokenType.INTEGER},
             {"double", TokenType.DOUBLE},
             {"string", TokenType.STRING},
-            {"Dim", TokenType.DIM},
+            {"dim", TokenType.DIM},
             {"as", TokenType.AS},
             {"or", TokenType.OR},
             {"and", TokenType.AND},
             {"do", TokenType.DO},
             {"while", TokenType.WHILE},
-            {"loop", TokenType.LOOP}
+            {"loop", TokenType.LOOP},
+            {"not", TokenType.NOT }
         };
         public static Dictionary<char, TokenType> SpecialSymbols = new Dictionary<char, TokenType>()
         {

@@ -1,0 +1,18 @@
+﻿<Window x:Class="work.test" x:Name="window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:work"
+        mc:Ignorable="d"
+        Title="test" Height="220" Width="250" MinHeight="220" MinWidth="250" SizeChanged="resize">
+    <Grid>
+        <Label Content="Ширина" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Высота" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tInput" Height="23" Margin="10,72,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="tOutput" Height="23" Margin="10,100,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button Content="Перевод" Margin="0,131,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Button_Click"/>
+        <Label x:Name="xWidth" Content="" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="xHeaight" Content="" HorizontalAlignment="Left" Margin="70,41,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

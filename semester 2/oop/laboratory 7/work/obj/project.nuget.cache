@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iv26zF4h+fLADORF1LLQr/yl9BKr6TdmUhEr2tfWdOlNpR6B8oUNZa+BBYsCSv6jt3PaOZQ/FZA9/WyKqkvOZA==",
+  "dgSpecHash": "zMMIyrzwEx0CFvRgyZvHyqDTbegbRXJtRE7TBjW4ca7AfCt91Hr9yihexMD0ZTcUBatafglOaHaISZIpFc338A==",
   "success": true,
-  "projectFilePath": "D:\\Users\\mina987\\Desktop\\универ\\универ 2 семестр\\ООП\\lab7\\lab7.csproj",
+  "projectFilePath": "D:\\GitHub\\Institute\\semester 2\\oop\\laboratory 7\\work\\lab7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mina987\\.nuget\\packages\\docfx.console\\2.59.2\\docfx.console.2.59.2.nupkg.sha512"
   ],

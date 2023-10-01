@@ -4,7 +4,7 @@ int seed = 20;
 int min = -1000000;
 int max = min * -1;
 
-
+/*
 Search(10);
 Search(100);
 Search(1000);
@@ -14,7 +14,7 @@ Search(1000000);
 Search(10000000);
 Search(100000000);
 Search(1000000000);
-
+*/
 void Search(int l)
 {
     int count = 0;
@@ -40,6 +40,28 @@ void Search(int l)
     stopwatch.Stop();
     ConsoleWrite(count, stopwatch);
 }
+
+rec(0);
+void rec(int i)
+{
+    Console.WriteLine(i);
+    if (i < 10)
+    {
+        //i++;
+        //++i;
+        rec(++i);
+    }
+    Console.WriteLine(i);
+}
+
+
+
+
+
+
+
+
+
 
 int Search1(int[] arr, int digit, ref int count)
 {

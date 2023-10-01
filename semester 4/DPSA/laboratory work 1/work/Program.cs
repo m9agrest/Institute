@@ -6,9 +6,12 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 Random rnd = new Random(111);
 Start();
 
+
+
+
 void Start()
 {
-    for(int j = 0; j < 3; j++)
+    for(int j = 2; j < 3; j++)
     {
         switch (j)
         {
@@ -22,7 +25,7 @@ void Start()
                 Console.WriteLine("CountingSort");
                 break;
         }
-        for (int i = 10; i <= 1000000; i *= 10)
+        for (int i = 10000000; i <= 1000000000; i *= 10)
         {
             Console.WriteLine($"\ni = {i}");
             Console.WriteLine("----------------------------------------------------------------------");
@@ -37,7 +40,7 @@ void Start()
             long permutationsMin = 0;
             long permutationsMax = 0;
             double permutationsAverage = 0;
-            for (int I = 0; I < 5; I++)
+            for (int I = 0; I < 1; I++)
             {
                 Stopwatch stopwatch = new Stopwatch();
                 int[] array = Generation(i, -1000000, 1000000);

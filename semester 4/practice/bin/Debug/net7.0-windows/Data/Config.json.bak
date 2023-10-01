@@ -1,0 +1,10 @@
+{
+  "Files": {
+    "txt": "D:\\Program Files\\Notepad++\\notepad++.exe",
+    "cs": "D:\\Program Files\\Notepad++\\notepad++.exe"
+  },
+  "Type": 1,
+  "Service": "afarys",
+  "Port": 10101,
+  "Name": "Computer 1"
+}

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -163,8 +164,11 @@ namespace work
                 stack.Add(Curent());
                 i++;
             }
-            _Curent();
 
+            Parser parser = new Parser(stack.ToArray());
+            parser.Parse();
+
+            _Curent();
         }
 
         #region Ошибки

@@ -9,29 +9,33 @@
   },
   "packageFolders": {
     "C:\\Users\\mina987\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
     "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\mina987\\Desktop\\lab9\\lab9.csproj",
+      "projectUniqueName": "D:\\GitHub\\Institute\\semester 3\\oop\\laboratory work 9\\work\\lab9.csproj",
       "projectName": "lab9",
-      "projectPath": "D:\\Users\\mina987\\Desktop\\lab9\\lab9.csproj",
+      "projectPath": "D:\\GitHub\\Institute\\semester 3\\oop\\laboratory work 9\\work\\lab9.csproj",
       "packagesPath": "C:\\Users\\mina987\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\mina987\\Desktop\\lab9\\obj\\",
+      "outputPath": "D:\\GitHub\\Institute\\semester 3\\oop\\laboratory work 9\\work\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\mina987\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -56,7 +60,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -68,7 +73,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

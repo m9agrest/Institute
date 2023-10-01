@@ -30,7 +30,6 @@ namespace work
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 fileName = dialog.FileName;
-                
             }
         }
         int selectItem = -1;
