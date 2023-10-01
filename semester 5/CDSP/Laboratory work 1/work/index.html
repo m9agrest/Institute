@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ермилов Михаил Владимирович</title>
+		<link rel="stylesheet" href="min/css/background.css">
+		<link rel="stylesheet" href="min/css/font.css">
+		<link rel="stylesheet" href="min/css/title.css">
+		<link rel="stylesheet" href="min/css/block.css">
+		<link rel="stylesheet" href="min/css/box.css">
+		<script src="min/js/block.js"></script>
+	</head>
+	<body onload="onloadBlock()">
+		<div class="container">
+			<div class="box title">
+				<div class="title-name">Ермилов Михаил Владимирович</div>
+				<div class="title-info">
+					<span>Родился 04.05.2001</span>
+					<br>
+					<br>
+					<span>На момент 13.09.2023</span>
+					<ul>
+						<li>Стартапер</li>
+						<li>Блогер</li>
+						<li>Программист</li>
+						<li>Майнкрафтер</li>
+					</ul>
+				</div>
+			</div>
+			<div class="collection-block">
+				<div class="collection-block-button"></div>
+				
+				<div class="box block" id="Programming">
+					<div class="block-title">Программирование</div>
+					<div class="block-content">
+						<div class="block-content-list">
+							<ul>
+								<li onclick="blockText(LangC, listProgramming)">C</li>
+								<li onclick="blockText(LangJava, listProgramming)">Java</li>
+								<li onclick="blockText(LangCS, listProgramming)">C#</li>
+								<li onclick="blockText(LangPascal, listProgramming)">Pascal</li>
+								<li class="block-content-list-button" onclick="blockSublist(SublistWeb); blockText(LangWeb, listProgramming);">Web</li>
+								<ul id="SublistWeb" style="display: none;">
+									<li onclick="blockText(LangHTML, listProgramming)">HTML</li>
+									<li onclick="blockText(LangCSS, listProgramming)">CSS</li>
+									<li onclick="blockText(LangJS, listProgramming)">JS</li>
+									<li onclick="blockText(LangPHP, listProgramming)">PHP</li>
+									<li onclick="blockText(LangMySQL, listProgramming)">MySQL</li>
+								</ul>
+								<li onclick="blockText(LangBasic, listProgramming)">Basic</li>
+								<li onclick="blockText(LangAssembler, listProgramming)">Assembler</li>
+								<li onclick="blockText(Lang1С, listProgramming)">1С</li>
+								<li onclick="blockText(LangPython, listProgramming)">Python</li>
+							</ul>
+						</div>
+						<div id="LangNone" class="block-content-text">
+							<span>С лета 2016 года, я занимаюсь всем этим мракобесием. Продвинулся ли я? Однозначно да, раньше для меня это было что-то страшным и на уровне магии, сейчас увы, это для меня набор нулей и едениц, интерпретируемых в ассемблер команды, в свою очередь интерпретируемые в C, и уже с него в си-подобные, а от них и по цепочке до гребанного питона. Зная хоть один си-подобный и ооп, любой язык, кроме машинного и ассемблера - изучить легко! А про интернет - у него вкладка web, там-всё написанно. Зачем я начал изучать? Мне хотелось писать игры еще с далёкого 2014 года, спасибо таким играм как Minecraft, Terraria и фильму Трон: Наследие.</span>
+							<ul>
+								<li>Основные ссылки</li>
+								<ul>
+									<li><a href="https://vk.com/m9.studio">Основная группа ВК</a></li>
+									<li><a href="https://www.youtube.com/@m9_studio">YouTube канал</a></li>
+									<li><a href="https://github.com/m9studio">Основной GitHub</a></li>
+									<li><a href="https://m9studio.github.io">Основной Сайт</a></li>
+									<li><a href="https://www.m9-studio.ru">Сайт созданный через GitHub</a></li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangC" style="display: none;" class="block-content-text">
+							<li>Язык программирования C</li>
+							<br>
+							<span>Занимаюсь данным языком с сентября 2021. Правда не особо усердно, но уже смог овладеть навыками работы с структурами, массивами, файловой системой, датой и временем, работой с интернетом. Так-же писал разного рода библиотеки для упращения работ с лабораторными и практическими, в ходе обучения в МиВЛГУ.</span>
+						</div>
+						<div id="LangJava" style="display: none;" class="block-content-text">
+							<li>Язык программирования Java</li>
+							<br>
+							<span>Данный язык я начал изучать с весны 2019 года, с помощью книги "Программирование на Java для начинающих" от Васильева А.Н.. Создавал в ходе пет проектов, разные оконные игры с использованием Swing технологий.</span>
+							<li>Bukkit</li>
+							<span>В ходе жизненго пути, писал разные плагины для своих серверов Minecraft, основываясь на популярном ядре Bukkit, и используя его API. Так-же иногда подключая стороние плагины, для совмещения функционала моего плагина и уже готового.</span>
+							<ul>
+								<li>Примечания</li>
+								<ul>
+									<li>В 2021 году, сдавал ЕГЭ, с помощью данного языка.</li>
+									<li>С осени 2023 года, преподаю данный язык в IT-кубе, распологающемся в гимназии №6 в г. Муром.</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangCS" style="display: none;" class="block-content-text">
+							<li>Язык программирования C#</li>
+							<br>
+							<span>Начиная изучать Unity3D зимой 2020 года, я сталкнулся с API данного движка, использующего C# язык. За это время, я научился создавать разные приложения, библиотеки и простые скрипты.</span>
+							<li>websocket-sharp</li>
+							<span>В ходе потребностей, мне необходимо было использовать websocket соединение, для этого я начал изучать и использовать данную библиотеку, хотя она не обновлялась очень давно. С данной библиотекой я познакомился по рекомендациям разных программистов-блогеров, летом 2023.</span>
+							<li>Newtonsoft.Json</li>
+							<span>Весной 2022, в ходе выполнения лаб., мне было необходимо их как-то хранить, хоть нас и принуждали к xml разметки, я всё-же использовал JSON и данную библиотеку.</span>
+							<li>Unity</li>
+							<span>С зимы 2020 года, начал изучать данную программу и её API.</span>
+							<ul>
+								<li>Написанные библиотеки</li>
+								<ul>
+									<li><a href="https://github.com/m9studio/HexagonMatrix">Коллекция для хранения и обработки гексанальной матрицы</a></li>
+									<li><a href="https://github.com/m9studio/HexagonMatrix.Tracer">Дополнение к вышеуказанной коллекции, для поиска пути</a></li>
+									<li><a href="https://github.com/m9studio/HexagonMatrix">Библиотека "теории вероятности"</a></li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangPascal" style="display: none;" class="block-content-text">
+							<li>Язык программирования Pascal</li>
+							<br>
+							<span>Этот школьный язык, я как нистранно изучил в школе с осени 2016 года и продолжил использовать для разных соревнований вплоть до начала весны 2019 года. За это время, я пытался создавать на нем консольные игры, сохранять необходимые файлы на устройства и использовать интернет.</span>
+							<ul>
+								<li>Соревнования</li>
+								<ul>
+									<li>3 место, в региональной олимпиаде по информационным технологиям обучающихся проффесиональных образовательных организаций, расположенных на территории Владимирской области, в секции первокурсников. 21 марта 2018 года.</li>
+									<li>Участие в региональной олимпиаде по информационным технологиям обучающихся проффесиональных образовательных организаций Владимирской области. 20 марта 2019 года.</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangHTML" style="display: none;" class="block-content-text">
+							<li>Язык разметки HTML</li>
+							<br>
+							<span>Данный язык разметки, я начал изучать с лета 2017 года.</span>
+						</div>
+						<div id="LangCSS" style="display: none;" class="block-content-text">
+							<li>Язык таблиц стилей CSS</li>
+							<br>
+							<span>Данный язык разметки, я начал изучать вместе с HTML.</span>
+							<li>Boostrap</li>
+							<span>В конце лета 2021, в ходе выполнения тестового задания для собеседования, мне пришлось познакомится с данной библиотекой, которая с одной стороны и упрощает разметку, но с другой, тот-же самый flex, справляется с этой задачей.</span>
+						</div>
+						<div id="LangJS" style="display: none;" class="block-content-text">
+							<li>Язык программирования Java Script</li>
+							<br>
+							<span>Данный не типизированный язык, я изучаю с лета 2016. Первое мое знакомство было с уроков, о том как писать моды на Minecraft PE, с использованием BlockLauncher и его API. В 2017 году, начал изучать DroidScript, где так-же используется данный язык. После этого, начал использовать данный язык уже для работы с сайтами.</span>
+							<li>BlockLauncher</li>
+							<span>Как было сказано ранние, с помощью данной утилиты и его API, я писал свои первые моды на выше упомянутую игру.</span>
+							<li>DroidScript</li>
+							<span>С помощью данной утилиты и его API, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе. С данной программой я познакомился осенью 2017 года.</span>
+							<li>three.js</li>
+							<span>В ходе создания web игр, мне стало интересно поработать в web с 3D сценами, моделями и прочим. Из-за чего весной 2019 года начал изучать данную библиотеку и все сопутсвующие.</span>
+							<li>jquery</li>
+							<span>В ходе изучения сайтостроения, мне было необходимо отправлять запросы на мой первый и простенький PHP скрипт, из-за чего мой выбор пал на данную библиотеку зимой 2019 года. Сейчас, я уже сам пишу функции для создания разного рода запросов на сервер.</span>
+						</div>
+						<div id="LangPHP" style="display: none;" class="block-content-text">
+							<li>Язык программирования PHP</li>
+							<br>
+							<span>Данный язык я начал изучать зимой в 2019 году. За это время мной было изучено множество внутренних технологий и методов, включая ООП данного языка.</span>
+						</div>
+						<div id="LangMySQL" style="display: none;" class="block-content-text">
+							<li>СУБД MySQL</li>
+							<br>
+							<span>В ходе работы с php, мне необходимо было каким-то образом хранить данные, из-за чего я начал изучать данное СУБД с 2021 года.</span>
+						</div>
+						<div id="LangWeb" style="display: none;" class="block-content-text">
+							<span>Web окружал меня с самого начала моего пути программиста. JSON, websocet, cookie, post и get запросы, работы с субд, это всё я знаю как отче наш, да и плюсом отлавливаю и читаю запросы в браузерах, благо есть консоль разработчика, файлы с сайта я от туда-же ворую. И да, я настолько приисполнился, что использую данную консоль для верстки стилей сайта и для js команд. А что вы мне сделаете? Даже DNS для меня не магазин, а просто информация о домене и куда он ведет.</span>
+							<ul>
+								<li>Проекты</li>
+								<ul>
+									<li>Игра: игра в города; 2018</li>
+									<li>Игра: Assassin in Dungeon; 2018-2019</li>
+									<li>Бот вк: <a href="https://vk.com/m9.halloween">тыквенный переполох</a>; 2019-2021</li>
+									<li>Бот вк и тг: <a href="https://vk.com/m9.legend">легенда о герое</a>; 2020-2021</li>
+									<li>Соц. сеть: <a href="https://vk.com/adaptkey">ADAPT KEY</a>; 2021-Нынешнее время</li>
+								</ul>
+								<li>Соревнования</li>
+								<ul>
+									<li>1 место, в 15 ежегодной научно-практической конференции студентов ГБПОУВО МКРП, в секции Информационно-коммуникационных технологий. 30 марта 2018 года.</li>
+									<ul>
+										<li>Так-же дан диплом с номинацией "За научню дерзость (новизну)"</li>
+										<li>Проект с которым участвовал: города, написанные на DroidScript с помощью JS.</li>
+									</ul>
+									<li>3 место, в 16 ежегодной научно-практической конференции студентов ГБПОУВО МКРП, в секции Информационно-коммуникационных технологий. 29 марта 2019 года.</li>
+									<ul>
+										<li>Так-же дан диплом с номинацией "За умение вести научную дискуссию"</li>
+										<li>Проект с которым участвовал: Assassin in Dungeon, игра написанная на HTML, CSS, JS и PHP.</li>
+									</ul>
+									<li>Технокубок 2019 - Отборочный Раунд 1. 23.09.2018.</li>
+								</ul>
+								<li>Изученные внешние API</li>
+								<ul>
+									<li>vk.com</li>
+									<li>ok.ru</li>
+									<li>telegram</li>
+									<li>qiwi.com</li>
+									<li>sms.ru</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangBasic" style="display: none;" class="block-content-text">
+							<li>язык программирования Basic</li>
+							<br>
+							<span>В ходе курсовой работы весной 2023, мне пришлось немного ознакомится с данным языком, лишь для того чтобы написать транслятор некоторых функций с данного языка.</span>
+						</div>
+						<div id="LangAssembler" style="display: none;" class="block-content-text">
+							<li>язык программирования Assembler</li>
+							<br>
+							<span>Весной 2023 мне пришла идея, немного ознакомится с данным языком, чтобы больше понимать внутреннее устройство компьютера.</span>
+						</div>
+						<div id="Lang1C" style="display: none;" class="block-content-text">
+							<li>язык программирования 1C</li>
+							<br>
+							<span>Синтаксис данного языка я узнал не по своей воле, а по воле случая, когда мне предложили работу, где необходимо его знать. В ходе быстрого изучения, мне пришла в голову идея создать транслятор с этого языка на язык js, так-как они сильно схожи, и обратно. Но увы, так идея и осталось идеей. Конец зимы 2023 года.</span>
+						</div>
+						<div id="LangPython" style="display: none;" class="block-content-text">
+							<li>язык программирования Python</li>
+							<br>
+							<span>Я являюсь противником данного языка!!</span>
+							<br>
+							<br>
+							<img width="80%" src="assets/error.gif">
+						</div>
+					</div>
+				</div>
+				
+				<!--<div class="box block" id="Bloger">
+					<div class="block-title">Блогерство</div>
+				</div>-->
+				
+				<div class="collection-block-button"></div>
+			</div>
+		</div>
+	<!--
+
+		
+		<h1>Ссылки</h1>
+		
+		<a href="https://vk.com/mina987">Страница в vk</a><br>
+		-->
+	</body>
+</html>
