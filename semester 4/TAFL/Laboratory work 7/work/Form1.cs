@@ -47,7 +47,7 @@ namespace work
                 LR a = new LR(tokens);
                 a.Check();
                 listBox1.Items.Add("Проверено успешно");
-            } catch(Exception E) {  listBox1.Items.Add(E.ToString()); }
+            } catch(Exception E) {  listBox1.Items.Add(E.Message); }
 
         }
     }

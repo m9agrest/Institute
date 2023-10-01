@@ -398,12 +398,8 @@ public class Bower
     {
         throw new Exception("Ошибка в выражении. Конец разбора");
     }
-    private void Error(string ojid)
+    private string Error(string ojid)
     {
-        //throw new Exception($"Ожидалось {ojid}, но было получено {LR.ConvertLex(tokens[nextlex].Type)}");
-        /*if (tokens[nextlex].Type == TokenType.NETERM)
-            throw new Exception($"Ожидалось {ojid}, но было получено { tokens[nextlex].Value }");
-        else
-            throw new Exception($"Ожидалось {ojid}, но было получено { LR.ConvertLex(tokens[nextlex].Type) }");*/
+        throw new Exception($"Ожидалось {ojid}, но было получено {tokens[nextlex].Type}");
     }
 }

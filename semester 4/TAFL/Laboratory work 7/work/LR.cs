@@ -165,8 +165,11 @@ namespace work
                 i++;
             }
 
-            Parser parser = new Parser(stack.ToArray());
-            parser.Parse();
+            Bower b = new Bower(stack);
+            b.Start();
+
+            //Parser parser = new Parser(stack.ToArray());
+            //parser.Parse();
 
             _Curent();
         }
