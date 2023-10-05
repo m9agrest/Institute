@@ -10,7 +10,6 @@ namespace work
     public class LL
     {
         List<Token> tokens;
-        List<List<Token>> id;
 
         Token? Curent(int I) => I < tokens.Count ? tokens[I] : null;
         Token? Previe(int I) => I > 0 ? tokens[I - 1] : null;
@@ -19,8 +18,6 @@ namespace work
         public LL(Token[] Tokens)
         {
             tokens = new List<Token>();
-            id = new List<List<Token>>();
-            id.Add(new List<Token>());
 
 
 
@@ -45,7 +42,6 @@ namespace work
                 I = ПроверкаЛинии(I);
             }
             while (I != -1);
-            Error4();
         }
 
         public int ПроверкаЛинии(int I)
@@ -75,7 +71,7 @@ namespace work
                     Error1(I);
                     if (Curent(I).Type == TokenType.IDENTIFIER)
                     {
-                        if(CheckId(I))
+                        if(true)
                         {
                             if(isEndLine(I))
                             {
@@ -156,9 +152,6 @@ namespace work
             Error1(I);
             if(Curent(I).Type == TokenType.IDENTIFIER)
             {
-                if(CheckId(I))
-                    Error2(I);
-                id[id.Count - 1].Add(Curent(I));
                 I++;
                 Error1(I);
                 if(Curent(I).Type == TokenType.COMMA)
@@ -186,9 +179,6 @@ namespace work
             {
                 if (isEndLine(I))
                     return 0;
-                if (Curent(I).Type == TokenType.IDENTIFIER)//проверка, существует ли переменная
-                    if (!CheckId(I))
-                        Error2(I); 
                 I++;
                 int sign = знак(I);
                 if (sign >= 0 && Curent(I).Type != TokenType.LESS && Curent(I).Type != TokenType.MORE && Curent(I).Type != TokenType.EQUAL)//устраняет любые символы кроме * / - +
@@ -231,20 +221,6 @@ namespace work
                 I++;
                 return r + действие(I);
             }
-        }
-
-        private bool CheckId(int I)
-        {
-            Error1(I);
-            foreach(List<Token> a in id)
-            {
-                foreach(Token b in a)
-                {
-                    if (b.Value == Curent(I).Value)
-                        return true;
-                }
-            }
-            return false;
         }
 
         private bool isEndLine(int I)
@@ -351,11 +327,6 @@ namespace work
         {
             if(c != 0)
                 throw new Exception($"На строке с {I} знаком, не сходяться скобки");
-        }
-        private void Error4()
-        {
-            if (id.Count > 1)
-                throw new Exception("У вас не закрыты блоки");
         }
     }
 }
