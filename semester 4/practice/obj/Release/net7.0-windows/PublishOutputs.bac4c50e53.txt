@@ -1,7 +1,0 @@
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\practice.exe
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\practice.dll
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\practice.deps.json
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\practice.runtimeconfig.json
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\practice.pdb
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\Newtonsoft.Json.dll
-D:\GitHub\Institute\semester 4\practice\bin\Release\net7.0-windows\publish\websocket-sharp.dll
