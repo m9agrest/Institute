@@ -17,7 +17,7 @@ namespace work
 {
     public partial class test : Window
     {
-        public test() : this("en-US") { }
+        public test() : this("ru-RU") { }
         public test(string culture)
         {
             System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(culture);
