@@ -6,7 +6,7 @@ public class Shop
 	private Map<Item, Integer> items = new HashMap<>();
 	private String name;
 	
-	public int getCountItems()
+	public int getCountItem()
 	{
 		int  i = 0;
 		for(Map.Entry<Item, Integer> entry: items.entrySet())
