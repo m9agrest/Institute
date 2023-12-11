@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace work
 {
@@ -23,7 +11,8 @@ namespace work
         public MainWindow()
         {
             InitializeComponent();
-            DataBase a = new DataBase("test1");
+            DataBase test = new DataBase("localhost", 3306, "course", "root", "");//new DataBase("test1");
+            //test.AddCode(7, "rus"); - работает
         }
     }
 }

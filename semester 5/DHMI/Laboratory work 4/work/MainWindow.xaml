@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:work"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Converter" Height="450" Width="800">
     <Grid>
         <Label x:Name="t"></Label>
+        <TextBox x:Name="S10" Width="150" Height="25" Margin="30,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S2" Width="150" Height="25" Margin="30,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S3" Width="150" Height="25" Margin="30,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S8" Width="150" Height="25" Margin="30,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S16" Width="150" Height="25" Margin="30,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label x:Name="SR" Width="150" Height="25" Margin="30,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
     </Grid>
 </Window>

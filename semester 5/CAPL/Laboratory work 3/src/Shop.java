@@ -23,6 +23,11 @@ public class Shop
 		}
 		return 0;
 	}
+	public boolean addItem(Item item, int count) {
+		if(items.containsKey(item) || count < 0) return false;
+		items.put(item, count);
+		return true;
+	}
 	public boolean setCountItem(Item item, int count)
 	{
 		if(items.containsKey(item) && count >= 0)
@@ -39,8 +44,24 @@ public class Shop
 		}
 		return false;
 	}
-	public int getSizeItems()
+	public Item getItem(int index) {
+		if(items.size() > index && index >= 0) {
+			int i = 0;
+			for(Map.Entry<Item, Integer> item: items.entrySet()) {
+				if(i == index) return item.getKey();
+				i++;
+			}
+		}
+		return null;
+	}
+	public int getCountTypeItems()
 	{
 		return items.size();
+	}
+	public String getName() {
+		return name;
+	}
+	public Shop(String name) {
+		this.name = name;
 	}
 }
