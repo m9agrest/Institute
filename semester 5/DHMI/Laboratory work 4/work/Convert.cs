@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace work
 {
@@ -42,6 +39,15 @@ namespace work
             RomeNumbers.Add(3, "C");
             RomeNumbers.Add(3.5f, "D");
             RomeNumbers.Add(4, "M");
+        }
+        static public bool isCorect(string number, int original)
+        {
+            for (int i = 0; i < number.Length; i++)
+            {
+                if (!Numbers.ContainsKey(number[i])) return false;
+                if (Numbers[number[i]] >= original) return false;
+            }
+            return true;
         }
         static public string Convert(string number, int original, int final)
         {

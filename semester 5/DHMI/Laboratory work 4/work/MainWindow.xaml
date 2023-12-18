@@ -5,14 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:work"
         mc:Ignorable="d"
-        Title="Converter" Height="450" Width="800">
+        Title="Converter" MinHeight="250" MinWidth="400" MaxHeight="250" MaxWidth="400">
     <Grid>
-        <Label x:Name="t"></Label>
-        <TextBox x:Name="S10" Width="150" Height="25" Margin="30,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TextBox x:Name="S2" Width="150" Height="25" Margin="30,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TextBox x:Name="S3" Width="150" Height="25" Margin="30,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TextBox x:Name="S8" Width="150" Height="25" Margin="30,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <TextBox x:Name="S16" Width="150" Height="25" Margin="30,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Label x:Name="SR" Width="150" Height="25" Margin="30,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label Content="10" Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S10" Width="150" Height="25" Margin="35,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Width="150" Height="25" Margin="190,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click">Конвертировать</Button>
+        
+        <Label Content="2" Margin="5,35,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S2" Width="150" Height="25" Margin="35,35,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Width="150" Height="25" Margin="190,35,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1">Конвертировать</Button>
+        
+        
+        <Label Content="3" Margin="5,65,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S3" Width="150" Height="25" Margin="35,65,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Width="150" Height="25" Margin="190,65,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_2">Конвертировать</Button>
+
+
+        <Label Content="8" Margin="5,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S8" Width="150" Height="25" Margin="35,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Width="150" Height="25" Margin="190,95,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_3">Конвертировать</Button>
+        
+        
+        <Label Content="16" Margin="5,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="S16" Width="150" Height="25" Margin="35,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Width="150" Height="25" Margin="190,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_4">Конвертировать</Button>
+        
+        
+        <Label Content="R" Margin="5,155,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label x:Name="SR" Width="150" Height="25" Margin="35,155,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
     </Grid>
 </Window>

@@ -1,30 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace work
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow() => InitializeComponent();
+
+        private void Button_Click(object sender, RoutedEventArgs e) => Convert(S10.Text, 10);
+        private void Button_Click_1(object sender, RoutedEventArgs e) => Convert(S2.Text, 2);
+        private void Button_Click_2(object sender, RoutedEventArgs e) => Convert(S3.Text, 3);
+        private void Button_Click_3(object sender, RoutedEventArgs e) => Convert(S8.Text, 8);
+        private void Button_Click_4(object sender, RoutedEventArgs e) => Convert(S16.Text, 16);
+
+
+
+        void Convert(String num, int original)
         {
-            InitializeComponent();
-            t.Content =  Converter.toRomeNumbers("3969", 10);
+            if(!Converter.isCorect(num, original))
+            {
+                MessageBox.Show($"Ошибка: {num} не относится к {original} системе счисления!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            S10.Text = Converter.Convert(num, original, 10);
+            S2.Text = Converter.Convert(num, original, 2);
+            S3.Text = Converter.Convert(num, original, 3);
+            S8.Text = Converter.Convert(num, original, 8);
+            S16.Text = Converter.Convert(num, original, 16);
+            SR.Content = Converter.toRomeNumbers(num, original);
         }
     }
 }
