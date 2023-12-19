@@ -1,0 +1,41 @@
+﻿<Window x:Class="LB3.WindowStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LB3"
+        mc:Ignorable="d"
+        Title="Данные студента"  MinHeight="443.937" MinWidth="292" MaxHeight="443.937" MaxWidth="292">
+    <Window.Resources>
+        <RoutedUICommand x:Key="Save" Text="Save"/>
+        <RoutedUICommand x:Key="Clear" Text="Clear"/>
+        <RoutedUICommand x:Key="Cancel" Text="Cancel"/>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource Save}" Executed="Save" />
+        <CommandBinding Command="{StaticResource Clear}" Executed="Clear" />
+        <CommandBinding Command="{StaticResource Cancel}" Executed="Cancel" />
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Key="S" Modifiers="Ctrl" Command="{StaticResource Save}" />
+        <KeyBinding Key="X" Modifiers="Ctrl+Alt" Command="{StaticResource Clear}" />
+        <KeyBinding Key="Q" Modifiers="Ctrl" Command="{StaticResource Cancel}" />
+    </Window.InputBindings>
+    <Grid>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Height="27" Margin="18,10,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="InputSurname" HorizontalAlignment="Left" Height="27" Margin="24,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Height="27" Margin="18,64,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="InputName" HorizontalAlignment="Left" Height="27" Margin="24,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Height="27" Margin="18,118,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="InputPatronymic" HorizontalAlignment="Left" Height="27" Margin="24,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Факультет" HorizontalAlignment="Left" Height="27" Margin="18,172,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="InputFaculty" HorizontalAlignment="Left" Height="27" Margin="24,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Группа" HorizontalAlignment="Left" Height="27" Margin="18,226,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="InputGroup" HorizontalAlignment="Left" Height="27" Margin="24,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Height="27" Margin="19,280,0,0" VerticalAlignment="Top" Width="101"/>
+        <DatePicker x:Name="InputDateBirth" HorizontalAlignment="Left" Height="28" Margin="24,307,0,0" VerticalAlignment="Top" Width="234"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Height="21" Margin="24,374,0,0" VerticalAlignment="Top" Width="79" Click="Save"/>
+        <Button Content="Очистить все" HorizontalAlignment="Left" Height="21" Margin="179,340,0,0" VerticalAlignment="Top" Width="79" Click="Clear"/>
+        <Button Content="Отменить" HorizontalAlignment="Left" Height="21" Margin="179,374,0,0" VerticalAlignment="Top" Width="79" Click="Cancel"/>
+    </Grid>
+</Window>
