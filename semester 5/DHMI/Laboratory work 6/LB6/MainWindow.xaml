@@ -1,0 +1,96 @@
+﻿<Window x:Class="LB6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        Title="Преподаватели МиВЛГУ" MaxHeight="487" MaxWidth="803" Height="487" Width="803" MinHeight="450" MinWidth="800">
+    <Window.Resources>
+        <DataTemplate x:Key="TeacherTemplate">
+            <Grid Height="200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160"/>
+                    <ColumnDefinition Width="550"/>
+                </Grid.ColumnDefinitions>
+                <Border Margin="5" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center">
+                    <Image Source="{Binding ImageUrl}" Width="160" Height="200" Stretch="Fill"/>
+                </Border>
+                <StackPanel Grid.Column="1" >
+                    <TextBlock Text="{Binding Name}" ToolTip="{Binding Name}"
+                               FontWeight="Bold" FontSize="18" TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               TextTrimming="WordEllipsis"/>
+                    <TextBlock Text="{Binding Rank, StringFormat='Ученая степень: {0}'}"
+                               FontSize="16"
+                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
+                               TextAlignment="Justify"
+                               ToolTip="{Binding Rank}"/>
+                    <TextBlock Text="{Binding Title, StringFormat='Ученое звание: {0}'}"
+                               FontSize="16"
+                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
+                               TextAlignment="Justify"
+                               ToolTip="{Binding Title}"/>
+                    <TextBlock Text="{Binding Post, StringFormat='Должность: {0}'}"
+                               FontSize="16"
+                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
+                               TextAlignment="Justify"
+                               ToolTip="{Binding Post}"/>
+                    <TextBlock Text="{Binding Conditions, StringFormat='Условия привлечения: {0}'}"
+                               FontSize="16"
+                               TextWrapping="Wrap"
+                               TextTrimming="WordEllipsis"
+                               TextAlignment="Justify"
+                               ToolTip="{Binding Conditions}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="borderButton"
+                                CornerRadius="5"
+                                Height="{Binding Height, RelativeSource={RelativeSource TemplatedParent}}"
+                                BorderBrush="#4F9FCB"
+                                BorderThickness="1"
+                                Background="White">
+                            <TextBlock VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextAlignment="Center"
+                                       Text="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Border>
+                        <ControlTemplate.Triggers >
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="borderButton" Property="BorderBrush" Value="#00F"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter TargetName="borderButton" Property="BorderBrush" Value="#00F"/>
+                                <Setter TargetName="borderButton" Property="Background" Value="#66F"/>
+                                <Setter TargetName="borderButton" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <ListBox x:Name="ListBoxTeachers" 
+                 HorizontalAlignment="Center" 
+                 Height="415" VerticalAlignment="Top"
+                 Width="780" 
+                 Margin="0,43,0,0"
+                 ItemTemplate="{DynamicResource TeacherTemplate}"/>
+        <Button x:Name="Update" 
+                Content="Обновить" 
+                HorizontalAlignment="Center" 
+                Height="28" Margin="0,10,0,0" 
+                VerticalAlignment="Top" 
+                Width="760" 
+                Click="UpdateData"/>
+    </Grid>
+</Window>
