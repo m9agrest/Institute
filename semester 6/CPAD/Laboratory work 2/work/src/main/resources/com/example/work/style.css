@@ -1,0 +1,31 @@
+.button{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: #7109AA;
+}
+.button:pressed{
+    -fx-background-color: #5F2580;
+}
+
+
+.elem{
+	-fx-background-color: #9F3ED5;
+	-fx-border-color: #48036F;
+    -fx-border-width: 2;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.text{
+    -fx-text-fill: #48036F;
+    -fx-font-family: Arial Black;
+    -fx-font-size: 14;
+}
+
+.background{
+    -fx-background-color: #9F3ED5;
+}

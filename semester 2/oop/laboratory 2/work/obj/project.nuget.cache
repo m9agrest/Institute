@@ -1,8 +1,38 @@
 {
   "version": 2,
-  "dgSpecHash": "nvbUnwpfoSTDtg0+H6eQEl9df8iNHP4Jjvf4r4ZSelr9juRZkGkDQdbA+nh3adwXwyDgxhWJURRRgYUkwqPpZg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\student\\source\\repos\\lab2\\lab2.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "dgSpecHash": "Tv5L3QC26XO3w6b+C3+ZyPGYPzxErXKinf/eMueBuQlvz0ye14ePiuG+g2kCUUGDXmyjvqK1IdXEqihltXVGyQ==",
+  "success": false,
+  "projectFilePath": "D:\\GitHub\\Institute\\semester 2\\oop\\laboratory 2\\work\\lab2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Локальный источник \"C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages\" не существует.",
+      "libraryId": "Microsoft.WindowsDesktop.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Локальный источник \"C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages\" не существует.",
+      "libraryId": "Microsoft.NETCore.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Локальный источник \"C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages\" не существует.",
+      "libraryId": "Microsoft.AspNetCore.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Локальный источник \"C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages\" не существует.",
+      "libraryId": "Microsoft.NETCore.App.Host.win-x64"
+    }
+  ]
 }

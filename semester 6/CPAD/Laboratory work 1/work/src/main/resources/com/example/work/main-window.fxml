@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" styleClass="background" stylesheets="@main-window.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.work.MainController">
+   <children>
+      <Label text="Введите данные о треугольнике" textAlignment="CENTER" wrapText="true">
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="title" />
+         </styleClass>
+      </Label>
+      <Group>
+         <children>
+            <TextField fx:id="InputA" layoutX="75.0" layoutY="-1.0" promptText="Введите число">
+               <styleClass>
+                  <String fx:value="elem" />
+                  <String fx:value="input" />
+                  <String fx:value="text" />
+               </styleClass>
+            </TextField>
+            <Slider fx:id="SliderA" layoutX="81.0" layoutY="43.0" onMouseDragged="#DragA" prefHeight="14.0" prefWidth="170.0" />
+            <Label layoutX="-59.0" layoutY="11.0" text="Введите сторону A">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="title2" />
+               </styleClass>
+            </Label>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <TextField fx:id="InputB" layoutX="75.0" layoutY="-1.0" promptText="Введите число">
+               <styleClass>
+                  <String fx:value="elem" />
+                  <String fx:value="input" />
+                  <String fx:value="text" />
+               </styleClass>
+            </TextField>
+            <Slider fx:id="SliderB" layoutX="81.0" layoutY="43.0" onMouseDragged="#DragB" prefHeight="14.0" prefWidth="170.0" />
+            <Label layoutX="-59.0" layoutY="11.0" text="Введите сторону B">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="title2" />
+               </styleClass>
+            </Label>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <TextField fx:id="InputC" layoutX="75.0" layoutY="-1.0" promptText="Введите число">
+               <styleClass>
+                  <String fx:value="elem" />
+                  <String fx:value="input" />
+                  <String fx:value="text" />
+               </styleClass>
+            </TextField>
+            <Slider fx:id="SliderC" layoutX="81.0" layoutY="43.0" onMouseDragged="#DragC" prefHeight="14.0" prefWidth="170.0" />
+            <Label layoutX="-59.0" layoutY="11.0" text="Введите сторону C">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="title2" />
+               </styleClass>
+            </Label>
+         </children>
+      </Group>
+      <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Check" prefHeight="35.0" prefWidth="358.0" text="Проверить">
+         <styleClass>
+            <String fx:value="elem" />
+            <String fx:value="text" />
+         </styleClass>
+      </Button>
+   </children>
+</VBox>
