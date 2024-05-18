@@ -2,12 +2,15 @@ package com.example.work;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class DataBase {
     private Connection connection;
     private Statement statement;
+
+    /**
+     * Подключение к базе данных
+     */
     private void connection(){
         String url = "jdbc:mysql://localhost:3306/ak";
         String username = "root";
@@ -17,6 +20,12 @@ public class DataBase {
             statement = connection.createStatement();
         }catch (Exception e){ }
     }
+
+    /**
+     * Список записей возвращаемых после запроса
+     * @param request Запрос
+     * @return Список записей
+     */
     public List<ResultSet> Request(String request){
         ArrayList<ResultSet> list = new ArrayList<ResultSet>();
         try{

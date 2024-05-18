@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XsMdHKF1OPWbUCOArDBvZufNaoPZyG4nLNBRpatXdmcexxOWtVWurDRA0/P4WfZDOj7AAb9N/UvtbkWNlkVrWQ==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\Institute\\semester 6\\NEC\\Laboratory work 7\\work\\work.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mina987\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512"
+  ],
+  "logs": []
+}
