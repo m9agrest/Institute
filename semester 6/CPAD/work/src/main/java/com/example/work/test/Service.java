@@ -1,6 +1,4 @@
-package com.example.work;
-
-import com.example.work.struct.Student;
+package com.example.work.test;
 
 import java.sql.SQLException;
 

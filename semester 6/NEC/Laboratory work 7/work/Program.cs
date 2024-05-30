@@ -7,125 +7,123 @@ namespace work
 {
     internal class Program
     {
-        static IEnumerable<HtmlNode> elements;
-        static string[] args = {"search", "fitr", "pin", "1"};
         static WebClient wClient = new WebClient()
         {
             Encoding = Encoding.UTF8
         };
+        static HtmlDocument doc = new HtmlDocument();
+        static HtmlNode node;
+        static string[] commands;
         static void Main()
         {
-            fSearch();
-        }
-        static void fHelp()
-        {
-
-        }
-        static void fSearch()
-        {
-            if (args.Length > 2)//Search fitr pin
+            while (true)
             {
-                string URL = "https://www.mivlgu.ru/fakultety/" + args[1] + "/" + args[2] + "/prepodavatelskiy-sostav";
-                HtmlDocument doc = new HtmlDocument();
-                doc.LoadHtml(
-                    wClient.DownloadString(URL).Replace(
-                        "class=\"h_query\"></div>              </div>  <br />",
-                        "class=\"h_query\"></div> <br />"
-                    )
-                );
-                elements = doc.GetElementbyId("content").Elements("div").Where(
-                    e => e.Attributes["class"].Value.Contains("teacher_inf")
-                );
-                if(args.Length > 3)//Search fitr pin 1
-                {
-                    fInfoTeacher();
-                }
-                else//Search fitr pin
-                {
-                    fListTeacher();
-                }
-            }
-            else if (args.Length > 1)//Search fitr
-            {
-                fListDepartment();
-            }
-            else //Search
-            {
-                fListFaculty();
-            }
-        }
-        static void fInfoTeacher()
-        {
-            int l = 0;
-            if (int.TryParse(args[3], out l))
-            {
-                int i = 0;
-                foreach (HtmlNode el in elements)
-                {
-                    i++;
-                    if (i == l)
+                Console.Write(">");
+                string command = Console.ReadLine();
+                commands = command.Split(" ");
+                if(commands.Length > 0) {
+                    switch(commands[0])
                     {
-                        HtmlNode info = el.Elements("div").Where(
-                            e => e.Attributes["class"].Value == "general_inf"
-                            ).ToList()[0];
-                        HtmlNode shortInfo = info.Elements("div").Where(
-                            e => e.Attributes["class"].Value == "pers_data"
-                            ).ToList()[0];
-
-                        Console.WriteLine(shortInfo.Elements("field").Where(
-                            e => e.Attributes["class"].Value == "name field-inf"
-                            ).ToList()[0].Element("value").InnerText);
-                        Console.WriteLine(shortInfo.Elements("field").Where(
-                            e => e.Attributes["class"].Value == "up_rank field-inf"
-                            ).ToList()[0].Element("value").InnerText);
-                        Console.WriteLine(shortInfo.Elements("field").Where(
-                            e => e.Attributes["class"].Value == "title field-inf"
-                            ).ToList()[0].Element("value").InnerText);
-                        Console.WriteLine(shortInfo.Elements("field").Where(
-                            e => e.Attributes["class"].Value == "post field-inf"
-                            ).ToList()[0].Element("value").InnerText);
-                        Console.WriteLine(shortInfo.Elements("field").Where(
-                            e => e.Attributes["class"].Value == "cond field-inf"
-                            ).ToList()[0].Element("value").InnerText);
-                        i = -1;
-                        break;
-                    }
-                    if (i > -1)
-                    {
-                        Console.WriteLine("запись не найдена");
+                        case "exit":
+                            if (Exit())
+                            {
+                                return;
+                            }
+                            break;
+                        case "help": Help(); break;
+                        case "title": Title(); break;
+                        case "url": Url(); break;
+                        case "img": Img(); break;
+                        default: Console.WriteLine("Error: команда не найдена"); break;
                     }
                 }
             }
-            else
+        }
+        static bool Load()//title https://habr.com/ru/articles/145820/
+        {
+            if(commands.Length > 1)
             {
-                Console.WriteLine("неправильный аргумент");
+                doc.LoadHtml(wClient.DownloadString(commands[1]));
+                node = doc.DocumentNode;
+                return true;
+            }
+            Console.WriteLine("Error: ссылка не указана");
+            return false;
+        }
+        static void Help()
+        {
+            Console.WriteLine("help - подсказка по всем командам");
+            Console.WriteLine("exit - выход с программы");
+            Console.WriteLine("title [url] - выводит заголовки (с h1 по h6) с указаного сайта");
+            Console.WriteLine("url [url] - выводит все ссылки и их названия с указаного сайта");
+            Console.WriteLine("img [url] - выводит ссылки всех изображений с указаного сайта");
+        }
+        static bool Exit()
+        {
+            Console.WriteLine("Выйти? [y/n]");
+            while (true)
+            {
+                char key = Console.ReadKey(false).KeyChar;
+                if (key == 'y')
+                {
+                    return true;
+                }
+                else if (key == 'n')
+                {
+                    break;
+                }
+            }
+            return false;
+        }
+        static void Title()
+        {
+            if (Load())
+            {
+                IEnumerable<HtmlNode> elements = node.SelectNodes("//*[self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6]");
+                if(elements != null)
+                {
+                    foreach (HtmlNode element in elements)
+                    {
+                        Console.WriteLine(element.Name + ": " + element.InnerText);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Error: Элементов не найдено");
+                }
             }
         }
-        static void fListTeacher()
+        static void Url()
         {
-            int i = 0;
-            foreach (HtmlNode el in elements)
+            if (Load())
             {
-                i++;
-                HtmlNode info = el.Elements("div").Where(
-                    e => e.Attributes["class"].Value == "general_inf"
-                    ).ToList()[0];
-                HtmlNode shortInfo = info.Elements("div").Where(
-                    e => e.Attributes["class"].Value == "pers_data"
-                    ).ToList()[0];
-
-                Console.WriteLine(i + ") " + shortInfo.Elements("field").Where(
-                    e => e.Attributes["class"].Value == "name field-inf"
-                    ).ToList()[0].Element("value").InnerText);
+                IEnumerable<HtmlNode> elements = node.SelectNodes("//a[@href]");
+                foreach (HtmlNode element in elements)
+                {
+                    string href = element.Attributes["href"].Value;
+                    if (!href.StartsWith("http"))
+                    {
+                        href = commands[1] + href;
+                    }
+                    Console.WriteLine(element.InnerText + ": " + href);
+                }
             }
         }
-        static void fListFaculty()
+        static void Img()
         {
-
-        }
-        static void fListDepartment()
-        {
-
+            if (Load())
+            {
+                IEnumerable<HtmlNode> elements = node.SelectNodes("//img[@src]");
+                foreach (HtmlNode element in elements)
+                {
+                    string src = element.Attributes["src"].Value;
+                    if (!src.StartsWith("http"))
+                    {
+                        src = commands[1] + src;
+                    }
+                    Console.WriteLine(src);
+                }
+            }
         }
     }
 }
