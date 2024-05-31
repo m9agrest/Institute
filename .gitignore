@@ -2,4 +2,4 @@ bin
 Debug
 .vs
 node_modules
-/semester 1/*
+semester\s1
