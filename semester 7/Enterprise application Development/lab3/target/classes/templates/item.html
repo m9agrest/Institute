@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${schoolboy.surname}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Информация о школьнике</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Id: </b><span th:text="${schoolboy.id}"></span></li>
+        <li class="list-group-item"><b>Фамилия: </b><span th:text="${schoolboy.surname}"></span></li>
+        <li class="list-group-item"><b>Имя: </b><span th:text="${schoolboy.name}"></span></li>
+        <li class="list-group-item"><b>Отчество: </b><span th:text="${schoolboy.patronymic}"></span></li>
+        <li class="list-group-item"><b>Пол: </b><span th:text="${schoolboy.man ? 'Мальчик' : 'Девочка'}"></span></li>
+        <li class="list-group-item"><b>Национальность: </b><span th:text="${schoolboy.nationality}"></span></li>
+        <li class="list-group-item"><b>Рост: </b><span th:text="${schoolboy.height}"></span></li>
+        <li class="list-group-item"><b>Вес: </b><span th:text="${schoolboy.weight}"></span></li>
+        <li class="list-group-item"><b>Дата рождения: </b><span th:text="${schoolboy.birth}"></span></li>
+    </ul>
+    <a href="/" class="btn btn-primary mt-3">На главную</a>
+</div>
+
+<!-- Подключение Bootstrap JS и его зависимости -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

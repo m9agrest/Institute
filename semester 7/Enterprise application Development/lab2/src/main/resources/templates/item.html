@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title th:text="${student.surname}"></title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+    <form>
+        <h1 th:text="${student.surname + ' ' + student.name + ' ' + student.patronymic}"></h1>
+        <div>Id: <span th:text="${student.id}"></span></div>
+        <div>Возраст: <span th:text="${student.age}"></span></div>
+        <div>Город: <span th:text="${student.city}"></span></div>
+        <div>Пол:
+            <span th:if="${student.isMan}">Мужской</span>
+            <span th:if="${!student.isMan}">Женский</span>
+        </div>
+        <div>Факультет: <span th:text="${student.faculty}"></span></div>
+        <div>Группа: <span th:text="${student.group}"></span></div>
+        <a href="/students">Список студентов</a>
+    </form>
+</body>
+</html>

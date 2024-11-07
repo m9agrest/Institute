@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Студент</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<h1>Информация о студенте</h1>
+<form>
+  <div th:text="'id: ' + ${student.id}" />
+  <div th:text="'Имя: ' + ${student.name}" />
+  <div th:text="'Фамилия: ' + ${student.surname}" />
+  <div th:text="'Группа: ' + ${student.group}" />
+  <div th:text="'Логин: ' + ${student.login}" />
+  <div th:text="'Почта: ' + ${student.email}" />
+  <a href="/">Ввести новую информацию</a>
+</form>
+</body>
+</html>

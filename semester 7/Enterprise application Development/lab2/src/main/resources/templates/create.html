@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить студента</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<div class="container">
+<h1>Форма информации о студенте</h1>
+<form action="#" th:action="@{/create}"
+      th:object="${student}" method="post">
+  <div>Имя студента:
+    <input type="text"
+           placeholder="Введите имя"
+           th:field="*{name}" /></div>
+
+  <div>Фамилия студента:
+    <input type="text"
+           placeholder="Введите фамилию"
+           th:field="*{surname}" /></div>
+
+  <div>Отчество студента:
+    <input type="text"
+           placeholder="Введите Отчество"
+           th:field="*{patronymic}" /></div>
+
+  <div>Возраст:
+    <input type="number"
+           placeholder="Введите возраст"
+           th:field="*{age}" /></div>
+
+  <div>Город:
+    <input type="text"
+           placeholder="Введите город"
+           th:field="*{city}" /></div>
+
+  <div>Пол мужской?:
+    <input type="checkbox"
+           th:field="*{isMan}" /></div>
+
+  <div>Факультет:
+    <input type="text"
+           placeholder="Введите факультет"
+           th:field="*{faculty}" /></div>
+
+  <div>Группа:
+    <input type="text"
+           placeholder="Введите группу"
+           th:field="*{group}" /></div>
+
+
+
+  <div><input type="submit" value="Создать" />
+    <input type="reset" value="Сброс" /></div>
+</form>
+<a href="/students">Список студентов</a>
+</div>
+</body>
+</html>

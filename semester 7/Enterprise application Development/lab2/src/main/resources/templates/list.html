@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Студенты</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Студенты:</h1>
+    <span th:if="${students.size() == 0}">Список студентов пустой</span>
+    <br>
+    <a href="/create">Добавить</a>
+    <br>
+    <table th:if="${students.size() > 0}" class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <td>Имя</td>
+            <td>Группа</td>
+            <td></td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.surname + ' ' + student.name}"/>
+            <td th:text="${student.faculty + ' ' + student.group}"/>
+            <td><a class="btn btn-secondary" th:href="@{'/student' + ${student.id}}">Details</a></td>
+            <td><a class="btn btn-danger" th:href="@{'/delete?id=' + ${student.id}}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

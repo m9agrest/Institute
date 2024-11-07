@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 th:text="${title}"></h2>
+    <form method="post" th:action="@{${url}}" th:object="${schoolboy}" class="needs-validation" novalidate>
+        <input type="hidden" th:field="*{id}"/>
+        <div class="form-group">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" class="form-control" th:field="*{surname}" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" class="form-control" th:field="*{name}" required>
+        </div>
+        <div class="form-group">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" class="form-control" th:field="*{patronymic}" required>
+        </div>
+        <div class="form-group">
+            <b>Пол:</b><br />
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" th:field="*{man}" value="true" id="male" required>
+                <label class="form-check-label" for="male">Мальчик</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" th:field="*{man}" value="false" id="female" required>
+                <label class="form-check-label" for="female">Девочка</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nationality">Национальность:</label>
+            <input type="text" id="nationality" class="form-control" th:field="*{nationality}" required>
+        </div>
+        <div class="form-group">
+            <label for="height">Рост:</label>
+            <input type="number" id="height" class="form-control" th:field="*{height}" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Вес:</label>
+            <input type="number" id="weight" class="form-control" th:field="*{weight}" required>
+        </div>
+        <div class="form-group">
+            <label for="birth">Дата рождения:</label>
+            <input type="date" id="birth" class="form-control" th:value="*{birth}"  th:field="*{birth}" required>
+        </div>
+        <button type="submit" class="btn btn-primary" th:text="${title}"></button>
+        <button type="reset" class="btn btn-secondary">Сброс</button>
+    </form>
+    <a href="/" class="btn btn-primary mt-3">На главную</a>
+</div>
+
+<!-- Подключение Bootstrap JS и его зависимости -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
