@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UodwP89s6wQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mina987\\Desktop\\Security\\lab5\\lab5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mina987\\.nuget\\packages\\system.codedom\\9.0.0\\system.codedom.9.0.0.nupkg.sha512",
+    "C:\\Users\\mina987\\.nuget\\packages\\system.management\\9.0.0\\system.management.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

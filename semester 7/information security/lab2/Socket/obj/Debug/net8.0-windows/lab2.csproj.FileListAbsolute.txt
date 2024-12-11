@@ -1,0 +1,16 @@
+C:\Users\mina987\Desktop\Security\lab2\lab2\bin\Debug\net8.0-windows\lab2.exe
+C:\Users\mina987\Desktop\Security\lab2\lab2\bin\Debug\net8.0-windows\lab2.deps.json
+C:\Users\mina987\Desktop\Security\lab2\lab2\bin\Debug\net8.0-windows\lab2.runtimeconfig.json
+C:\Users\mina987\Desktop\Security\lab2\lab2\bin\Debug\net8.0-windows\lab2.dll
+C:\Users\mina987\Desktop\Security\lab2\lab2\bin\Debug\net8.0-windows\lab2.pdb
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.csproj.GenerateResource.cache
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.AssemblyInfoInputs.cache
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.AssemblyInfo.cs
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.csproj.CoreCompileInputs.cache
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.dll
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\refint\lab2.dll
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.pdb
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\lab2.genruntimeconfig.cache
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\ref\lab2.dll
+C:\Users\mina987\Desktop\Security\lab2\lab2\obj\Debug\net8.0-windows\Form1.resources
